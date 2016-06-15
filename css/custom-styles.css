@@ -96,6 +96,10 @@ ul li {
     clear: both;
 }
 
+.button-orange {
+
+}
+
 /* navigation */
 nav ul {
     width: 100%;
@@ -194,6 +198,25 @@ ul li:last-child a {
     text-align: center;
     padding-left: 35px;
 }
+.header-middle {
+    background: url("../images/background-header.jpg") no-repeat right bottom;
+    min-height: 208px;
+    margin-top: -20px;
+    background-size: 41% 105%;
+}
+.header-middle .tagline {
+    background: url("../images/background-lines.png") repeat center center;
+    min-height: 205px;
+    border-radius: 0 5px 5px 5px;
+    color: #ffffff;
+    line-height: 40px;
+    font-family: 'Colibri_b';
+    text-align: center;
+    font-size: 33px;
+    font-weight: bold;
+    padding: 60px 37px 20px 49px;
+}
+
 /* end of header */
 
 /* side-panel */
