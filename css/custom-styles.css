@@ -34,9 +34,11 @@
 a, button, input[type="submit"] {
     cursor: pointer;
 }
-a, a:hover, a:active {
+a, a:active {
     outline: none;
     border: none;
+}
+a:hover {
     text-decoration: none;
 }
 button, button:hover, button:active {
@@ -194,12 +196,6 @@ nav ul li:last-child a {
     font-family: Verdana, sans-serif;
     text-indent: 0;
 }
-.breadcrumbs li a {
-    text-decoration: underline;
-}
-.breadcrumbs li a:hover {
-    text-decoration: none;
-}
 .breadcrumbs li a:after {
     display: inline-block;
     content: '>';
@@ -236,7 +232,6 @@ nav ul li:last-child a {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    z-index: -1;
 }
 .contacts h2, .form-make-order h2 {
     font-family: 'pfd-m', sans-serif;
@@ -277,6 +272,7 @@ nav ul li:last-child a {
     font-size: 30px;
     color: #f1f83e;
     text-align: center;
+    margin: 20px 0 0 0;
 }
 .contacts .email, .contacts .url {
     padding: 0 0 0 40px;
@@ -319,6 +315,7 @@ nav ul li:last-child a {
     text-indent: inherit;
     line-height: 27px;
     letter-spacing: 1px;
+    text-align: center;
 }
 .form-make-order p span {
     display: block;
@@ -333,6 +330,10 @@ nav ul li:last-child a {
     width: 230px;
     margin: 10px auto 0;
     position: relative;
+    background: #ffffff;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -khtml-border-radius: 8px;
 }
 .form-make-order .form-field {
     display: block;
@@ -348,7 +349,9 @@ nav ul li:last-child a {
     -webkit-border-radius: 8px;
     -khtml-border-radius: 8px;
     border-radius: 8px;
+    background: #ffffff;
 }
+
 .form-make-order .form-field-wrap:before {
     content: '';
     display: block;
@@ -540,7 +543,7 @@ nav ul li:last-child a {
     width: 58.33333333%;
 }
 .header-middle .tagline {
-    background: url("../images/background-lines.png") repeat center center;
+    background: #5f97ba repeating-linear-gradient(-45deg, transparent, transparent 1px, rgba(110, 166, 200, .5) 1px, rgba(110, 166, 200, .5) 5px);
     min-height: 200px;
     border-radius: 0 5px 5px 5px;
     color: #ffffff;
@@ -625,7 +628,6 @@ nav ul li:last-child a {
     padding-left: 15px;
     color: #ffffff;
     font-family: Verdana, Helvetica, Arial, sans-serif;
-    text-decoration: underline;
 }
 .footer-links ul li a:before {
     content: '';
@@ -637,9 +639,6 @@ nav ul li:last-child a {
     border-radius: 50%;
     background: #ffffff;
 }
-.footer-links ul li a:hover {
-    text-decoration: none;
-}
 .web-studio-link {
     display: inline-block;
     vertical-align: middle;
@@ -650,6 +649,7 @@ nav ul li:last-child a {
     color: #ffffff;
     font-family: Verdana, Helvetica, Arial, sans-serif;
     padding-top: 10px;
+    text-decoration: none;
 }
 .web-studio-link .text {
     font-size: 11px;
@@ -733,6 +733,10 @@ nav ul li:last-child a {
     padding-left: 25px;
     position: relative;
     color: #ffffff;
+    text-decoration: none;
+}
+.side-menu li a:hover {
+    text-decoration: underline;
 }
 .side-menu li a {
     font-family: Tahoma, sans-serif;
@@ -772,23 +776,262 @@ nav ul li:last-child a {
 /* end of consulting-block */
 
 /* services-cost */
+.services-cost {
+    border: 1px solid #aed1dd;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    width: 725px;
+    margin: 60px 10px 0 0;
+    position: relative;
+    text-align: right;
+    padding-bottom: 15px;
+}
 .services-cost .sub-title {
     font-size: 26px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -50px;
+    margin: 0;
+    padding: 0;
+
 }
 .services-cost ul {
-    width: 100%;
     display: table;
-    border: 1px solid #aed1dd;
+    width: 95%;
+    margin: 10px auto;
+    border-collapse: collapse;
 }
 .services-cost ul li {
     display: table-row;
 }
 .services-cost ul li div {
     display: table-cell;
+    text-align: left;
+    font-family: Tahoma, sans-serif;
+    font-size: 13px;
+    color: #363636;
+    padding: 5px 10px;
+}
+.services-cost ul .title-item .service-name {
+    font-size: 14px;
+    color: #006788;
+}
+.services-cost ul .sub-item .service-name {
+    padding-left: 25px;
+}
+.services-cost ul li div a {
+    font-family: Tahoma, sans-serif;
+    font-size: 13px;
+    color: #363636;
+}
+.services-cost ul li:first-child div {
+    background: #f9f9f9;
+    color: #005c84;
+    text-align: center;
+    font-size: 16px;
+    padding: 3px 10px;
+}
+.services-cost ul li:nth-child(2n + 1) div {
+    background: #f9f9f9;
+}
+.services-cost .service-name {
+    width: 60%;
+}
+.services-cost .service-unit {
+    text-align: center;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    width: 20%;
+}
+.services-cost .service-cost {
+    text-align: center;
+    width: 20%;
+}
+.services-cost .see-all {
+    margin-right: 2.5%;
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+    color: #006e92;
+}
+.services-cost h4, .services-cost h4 span {
+    text-align: center;
+    margin: 15px 0;
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+    color: #006e92;
+    font-weight: 100;
+}
+.services-cost h4 span {
+    text-transform: uppercase;
+}
+.services-cost .leave-order {
+    display: block;
+    width: 280px;
+    height: 45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    float: left;
+    background: #fcb24f;
+    margin-left: 2.5%;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Calibri Bold", sans-serif;
+    font-size: 16px;
+}
+.services-cost .phone-number {
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    font-family: "Calibri", sans-serif;
+    font-size: 23px;
+    color: #006e92;
+    text-align: center;
+    text-indent: 0;
+    float: right;
+    margin: 0 2.5% 0 0;
+    padding: 0 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border:  2px solid #006e92;
+}
+.services-cost .or {
+    display: inline-block;
+    height: 45px;
+    width: 25%;
+    line-height: 45px;
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    color: #006e92;
+    text-indent: 0;
+    text-align: center;
 }
 /*end of services-cost */
 
+/* work-steps */
+.work-steps .sub-title, .why-we .sub-title {
+    font-size: 26px;
+    margin-top: 25px;
+}
+.work-steps h3, .why-we h3 {
+    display: block;
+    width: 100%;
+    background: #6391b5;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+    font-family: "Calibri", sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+.work-steps .steps, .why-we ul {
+    width: 100%;
+    background: #067498 repeating-linear-gradient(-45deg, transparent, transparent 2px, rgba(0, 110, 146, .5) 2px, rgba(0, 110, 146, .5) 5px);
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+}
+.work-steps .steps ul {
+    width: 200px;
+    text-align: left;
+}
+.work-steps .steps>li:first-child {
+    margin-right: 60px;
+}
+.work-steps .steps ul li {
+    display: block;
+    font-family: 'Calibri', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin: 35px 0;
+    position: relative;
+}
+.work-steps .steps ul li:before {
+    content: '1';
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 30px;
+    font-family: "Calibri Bold", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    background: #ffffff;
+    color: #008cd2;
+    position: absolute;
+    left: -45px;
+    top: -8px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+.work-steps .steps>li:first-child li:nth-child(2):before {content: '2';}
+.work-steps .steps>li:first-child li:nth-child(3):before {content: '3';}
+.work-steps .steps>li:last-child li:nth-child(1):before {content: '4';}
+.work-steps .steps>li:last-child li:nth-child(2):before {content: '5';}
+.work-steps .steps>li:last-child li:nth-child(3):before {content: '6';}
+/* end of work-steps */
+
+/* why-we */
+.why-we ul {
+    background: #006e92 repeating-linear-gradient(-45deg, transparent, transparent 2px, rgba(6, 116, 152, .5) 2px, rgba(6, 116, 152, .5) 5px);
+    border: 1px solid transparent;
+    padding: 10px 0;
+}
+.why-we ul li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 70%;
+    margin: 10px 0 10px 10%;
+    text-align: left;
+    position: relative;
+}
+.why-we ul li:before {
+    content: '';
+    display: block;
+    width: 34px;
+    height: 41px;
+    position: absolute;
+    left: -50px;
+    top: 3px;
+    background: url('../images/icon-list-mark.png') no-repeat center;
+    background-size: cover;
+}
+.why-we ul li h4 {
+    font-family: 'Calibri', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+.why-we ul li p {
+    text-indent: 0;
+    font-family: Tahoma, sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+/* end of why-we */
+
 /* portfolio */
+.portfolio .sub-title {
+    font-family: 'Calibri', sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 25px;
+}
+.portfolio {
+    text-align: center;
+}
 .portfolio ul li {
     width: 210px;
     margin: 10px;
@@ -799,11 +1042,50 @@ nav ul li:last-child a {
     display: block;
     width: 100%;
     height: 170px;
-    overflow: hidden;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.portfolio ul li .img-wrap:before {
+    content: '';
+    width: 101%;
+    height: 104%;
+    position: absolute;
+    left: -1%;
+    top: -2.5%;
+    border: 2px solid #e0e9f0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
 }
 .portfolio ul li img {
+    display: block;
     width: 100%;
     height: auto;
+}
+.portfolio .portfolio-link {
+    text-decoration: none;
+}
+.portfolio .portfolio-link:hover {
+    text-decoration: underline;
+}
+.portfolio .see-all {
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+    width: 160px;
+    font-family: "Calibri Bold", sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    color: #ffffff;
+    background: #ff7900;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px auto 30px;
 }
 /* end of portfolio */
 
@@ -817,7 +1099,6 @@ nav ul li:last-child a {
     color: #1a5d88;
     font-family: 'Calibri', sans-serif;
     font-weight: 100;
-    margin-bottom: 30px;
 }
 .service-info-page .on-map {
     display: block;
@@ -828,7 +1109,7 @@ nav ul li:last-child a {
     overflow: hidden;
 }
 .service-info-page .contacts, .service-info-page .form-make-order {
-    margin: 30px 10px 0;
+    margin: 20px 10px 0;
 }
 /* end of contact-info */
 /***** END OF SERVICE INFO PAGE ***********/
