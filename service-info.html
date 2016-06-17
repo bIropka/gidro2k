@@ -94,17 +94,17 @@
 
             <div class="consulting-block">
 
-                <form action="#" class="form-make-order form-top right-column">
+                <form action="#" id="form-top" class="form-make-order form-top right-column">
 
                     <h2>Оставьте заявку</h2>
 
                     <p>и получите <span>БЕСПЛАТНУЮ</span> консультацию</p>
 
-                    <label class="form-field-wrap name-wrap"><input class="form-field" type="text" placeholder="Ваше имя" required/></label>
+                    <label class="form-field-wrap name-wrap"><input data-message="Некорректно" class="form-field" type="text" placeholder="Ваше имя" required/></label>
 
-                    <label class="form-field-wrap email-wrap"><input class="form-field" type="text" placeholder="Ваш e-mail" required/></label>
+                    <label class="form-field-wrap email-wrap"><input data-message="Некорректно" class="form-field" type="email" placeholder="Ваш e-mail" required/></label>
 
-                    <label class="form-field-wrap phone-wrap"><input class="form-field" type="text" placeholder="Ваш телефон" required/></label>
+                    <label class="form-field-wrap phone-wrap"><input data-message="Некорректно" class="form-field user-phone" type="tel" placeholder="Ваш телефон" required/></label>
 
                     <input type="submit" value="Оставить заявку"/>
 
@@ -227,6 +227,26 @@
                 <p class="or">или</p>
 
                 <p class="phone-number">+7 (495) 123-45-67</p>
+
+                <section class="window-callback-short">
+
+                    <form action="#" id="form-callback-short" class="form-callback-short">
+
+                        <h2>Получите бесплатную консультацию</h2>
+
+                        <p>Вы можете оставить заявку прямо сейчас.<br>Просто заполните форму и наши консультанты свяжутся с вами.</p>
+
+                        <label class="form-field-wrap name-wrap"><input data-message="Некорректно" class="form-field ph-italic" type="text" placeholder="Ваше имя" required/></label>
+
+                        <label class="form-field-wrap email-wrap"><input data-message="Некорректно" class="form-field ph-italic" type="email" placeholder="Ваш e-mail" required/></label>
+
+                        <label class="form-field-wrap phone-wrap"><input data-message="Некорректно" class="form-field user-phone ph-italic" type="tel" placeholder="Ваш телефон" required/></label>
+
+                        <input type="submit" value="Оставить заявку"/>
+
+                    </form>
+
+                </section>
 
             </div>
 
@@ -397,17 +417,17 @@
 
                 </section>
 
-                <form action="#" class="form-make-order form-bottom">
+                <form action="#" id="form-bottom" class="form-make-order form-bottom">
 
                     <h2>Оставьте заявку</h2>
 
                     <p>и получите <span>БЕСПЛАТНУЮ</span> консультацию</p>
 
-                    <label class="form-field-wrap name-wrap"><input class="form-field" type="text" placeholder="Ваше имя" required/></label>
+                    <label class="form-field-wrap name-wrap"><input data-message="Некорректно" class="form-field" type="text" placeholder="Ваше имя" required/></label>
 
-                    <label class="form-field-wrap email-wrap"><input class="form-field" type="text" placeholder="Ваш e-mail" required/></label>
+                    <label class="form-field-wrap email-wrap"><input data-message="Некорректно" class="form-field" type="email" placeholder="Ваш e-mail" required/></label>
 
-                    <label class="form-field-wrap phone-wrap"><input class="form-field" type="text" placeholder="Ваш телефон" required/></label>
+                    <label class="form-field-wrap phone-wrap"><input data-message="Некорректно" class="form-field user-phone" type="tel" placeholder="Ваш телефон" required/></label>
 
                     <input type="submit" value="Оставить заявку"/>
 
@@ -458,6 +478,8 @@
 </div>
 
 <script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/validatr.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/custom-scripts.js"></script>
 </body>
 
