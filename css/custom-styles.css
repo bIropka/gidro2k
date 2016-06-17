@@ -73,7 +73,7 @@ html, body {
 .wrapper>.block-content {
     border-left: 1px solid #e0e9f0;
     border-right: 1px solid #e0e9f0;
-    padding: 20px 5px 40px 0;
+    padding: 20px 5px 40px;
     margin: -5px auto 0;
 }
 
@@ -90,10 +90,18 @@ html, body {
 .ph-italic::-moz-placeholder {font-family: "Calibri", sans-serif;font-style: italic; font-size: 14px;line-height: 30px;color: #a5a5a3;opacity: 1;}
 .ph-italic:-moz-placeholder {font-family: "Calibri", sans-serif;font-style: italic; font-size: 14px;line-height: 30px;color: #a5a5a3;opacity: 1;}
 .ph-italic:-ms-input-placeholder {font-family: "Calibri", sans-serif;font-style: italic; font-size: 14px;line-height: 30px;color: #a5a5a3;opacity: 1;}
+.form-field-textarea::-webkit-input-placeholder {text-align: center;font-family: "Calibri", sans-serif;font-style: italic; font-size: 14px;line-height: 30px;color: #a5a5a3;opacity: 1;}
+.form-field-textarea::-moz-placeholder {text-align: center;font-family: "Calibri", sans-serif;font-style: italic; font-size: 14px;line-height: 30px;color: #a5a5a3;opacity: 1;}
+.form-field-textarea:-moz-placeholder {text-align: center;font-family: "Calibri", sans-serif;font-style: italic; font-size: 14px;line-height: 30px;color: #a5a5a3;opacity: 1;}
+.form-field-textarea:-ms-input-placeholder {text-align: center;font-family: "Calibri", sans-serif;font-style: italic; font-size: 14px;line-height: 30px;color: #a5a5a3;opacity: 1;}
 .form-field:focus::-webkit-input-placeholder {color: transparent;}
 .form-field:focus::-moz-placeholder {color: transparent;}
 .form-field:focus:-moz-placeholder {color: transparent;}
 .form-field:focus:-ms-input-placeholder {color: transparent;}
+.form-field-textarea:focus::-webkit-input-placeholder {color: transparent;}
+.form-field-textarea:focus::-moz-placeholder {color: transparent;}
+.form-field-textarea:focus:-moz-placeholder {color: transparent;}
+.form-field-textarea:focus:-ms-input-placeholder {color: transparent;}
 .form-field, .form-field:focus, .form-field:hover {
     border: 1px solid transparent;
 }
@@ -112,7 +120,7 @@ ul li {
     width: 250px;
 }
 .main-panel {
-    width: 735px;
+    width: 730px;
 }
 .clearfix:after {
     content: '';
@@ -435,7 +443,7 @@ nav ul li:last-child a {
     -moz-border-radius: 5px;
     border-radius: 5px;
     padding: 0 10px;
-    margin: 55px 0 0 15px;
+    margin: 55px 10px 0 15px;
 }
 .form-make-order.form-top:before {
     display: none;
@@ -815,7 +823,7 @@ nav ul li:last-child a {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    width: 725px;
+    width: 720px;
     margin: 60px 10px 0 0;
     position: relative;
     text-align: right;
@@ -948,6 +956,9 @@ nav ul li:last-child a {
 /*end of services-cost */
 
 /* work-steps */
+.work-steps, .why-we {
+    width: 720px;
+}
 .work-steps .sub-title, .why-we .sub-title {
     font-size: 26px;
     margin-top: 25px;
@@ -1047,14 +1058,14 @@ nav ul li:last-child a {
 }
 .why-we ul li h4 {
     font-family: 'Calibri', sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     color: #ffffff;
     letter-spacing: 1px;
 }
 .why-we ul li p {
     text-indent: 0;
     font-family: Tahoma, sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     color: #ffffff;
     padding: 0;
 }
@@ -1159,7 +1170,7 @@ nav ul li:last-child a {
 /* window-callback-short */
 .window-callback-short {
     position: absolute;
-    width: 725px;
+    width: 720px;
     left: -1px;
     bottom: -150px;
     display: none;
@@ -1170,7 +1181,7 @@ nav ul li:last-child a {
     width: 100%;
     background: #629db1 repeating-linear-gradient(-45deg, transparent, transparent 2px, rgba(92, 151, 171, .5) 2px, rgba(92, 151, 171, .5) 5px);
     text-align: center;
-    padding: 10px;
+    padding: 10px 5px;
     z-index: 10;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -1188,6 +1199,7 @@ nav ul li:last-child a {
     font-size: 15px;
     color: #ffffff;
     text-align: center;
+    letter-spacing: 1px;
 }
 .form-callback-short .form-field-wrap {
     display: inline-block;
@@ -1269,54 +1281,101 @@ nav ul li:last-child a {
     left: 0;
     top: 0;
     background: rgba(51, 51, 51 ,0.4);
-    display: none;
+    display: block;
     z-index: 10;
 }
 .form-callback-full {
     position: absolute;
-    width: 400px;
-    height: 420px;
+    width: 595px;
+    height: 375px;
     margin: auto;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     background: #629db1 repeating-linear-gradient(-45deg, transparent, transparent 2px, rgba(92, 151, 171, .5) 2px, rgba(92, 151, 171, .5) 5px);
-    text-align: center;
+    text-align: left;
     padding: 10px;
     z-index: 10;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
+    -webkit-box-shadow: 2px 2px 5px 0 rgba(255, 254, 210, 0.75), -2px -2px 5px 0 rgba(255, 254, 210, 0.75), inset 1px 1px 3px 0 rgba(255, 254, 210, 0.75), inset -1px -1px 3px 0 rgba(255, 254, 210, 0.75);
+    -moz-box-shadow: 2px 2px 5px 0 rgba(255, 254, 210, 0.75), -2px -2px 5px 0 rgba(255, 254, 210, 0.75), inset 1px 1px 3px 0 rgba(255, 254, 210, 0.75), inset -1px -1px 3px 0 rgba(255, 254, 210, 0.75);
+    box-shadow: 2px 2px 5px 0 rgba(255, 254, 210, 0.75), -2px -2px 5px 0 rgba(255, 254, 210, 0.75), inset 1px 1px 3px 0 rgba(255, 254, 210, 0.75), inset -1px -1px 3px 0 rgba(255, 254, 210, 0.75);
 }
-.form-callback-short h2 {
+.form-callback-full .close-marker {
+    display: block;
+    width: 17px;
+    height: 17px;
+    line-height: 17px;
+    font-size: 17px;
+    text-align: center;
+    font-family: "Calibri Bold", sans-serif;
+    color: #ffffff;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    font-weight: 900;
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -ms-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s;
+}
+.form-callback-full .close-marker:hover {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.form-callback-full .close-marker:active {
+    color: #ff0000;
+}
+.form-callback-full h2 {
     font-family: "Calibri", sans-serif;
     font-size: 25px;
     color: #ffe100;
     font-weight: 100;
     margin-bottom: 5px;
+    text-align: center;
 }
-.form-callback-short p {
+.form-callback-full p {
     font-family: "Calibri", sans-serif;
     font-size: 15px;
     color: #ffffff;
     text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
 }
-.form-callback-short .form-field-wrap {
+.form-callback-full .form-field-label {
     display: inline-block;
-    vertical-align: top;
-    width: 160px;
-    height: 30px;
-    margin: 10px 5px;
+    width: 30%;
+    text-align: right;
+    vertical-align: middle;
+    margin-right: 10px;
     position: relative;
 }
-.form-callback-short .form-field {
-    display: block;
-    width: 100%;
-    height: 100%;
+.form-callback-full .rel-wrap {
+    display: inline-block;
+    position: relative;
+    margin: 5px 0;
+}
+.form-callback-full .validatr-message {
+    left: 120px!important;
+}
+.form-callback-full .comment-wrap {
+
+}
+.form-callback-full .form-field {
+    display: inline-block;
+    width: 210px;
+    height: 30px;
     font-size: 12px;
     line-height: 30px;
-    padding: 0 10px 2px 35px;
+    padding: 0 10px 2px 45px;
     font-style: normal;
     letter-spacing: 1px;
     font-family: tahoma, Helvetica, Arial, sans-serif;
@@ -1326,33 +1385,56 @@ nav ul li:last-child a {
     border-radius: 8px;
     background: #ffffff;
 }
-.form-callback-short .form-field-wrap:before {
+ .form-callback-full .form-field-textarea {
+     display: block;
+     width: 350px;
+     height: 80px;
+     font-size: 12px;
+     line-height: 30px;
+     padding: 3px 15px;
+     margin: 5px auto;
+     font-style: normal;
+     letter-spacing: 1px;
+     font-family: tahoma, Helvetica, Arial, sans-serif;
+     -moz-border-radius: 15px;
+     -webkit-border-radius: 15px;
+     -khtml-border-radius: 15px;
+     border-radius: 15px;
+     background: #ffffff;
+     resize: none;
+ }
+.form-callback-full .form-field-label:before {
     content: '';
     display: block;
-    height: 25px;
-    width: 25px;
+    height: 23px;
+    width: 27px;
     position: absolute;
-    top: 2px;
-    left: 6px;
-    background: url("../images/sprite-form.png") no-repeat left center;
+    top: -4px;
+    left: auto;
+    right: -50px;
+    background: url("../images/sprite-form-black.png") no-repeat left center;
+    background-size: cover;
+    z-index: 10;
+}
+.form-callback-full .comment-wrap:before {
+    display: none;
+}
+.form-callback-full .email-wrap:before {
+    background: url("../images/sprite-form-black.png") no-repeat center;
     background-size: cover;
 }
-.form-callback-short .email-wrap:before {
-    background: url("../images/sprite-form.png") no-repeat center;
+.form-callback-full .phone-wrap:before {
+    background: url("../images/sprite-form-black.png") no-repeat right center;
     background-size: cover;
 }
-.form-callback-short .phone-wrap:before {
-    background: url("../images/sprite-form.png") no-repeat right center;
-    background-size: cover;
-}
-.form-callback-short input[type="submit"] {
-    display: inline-block;
+.form-callback-full input[type="submit"] {
+    display: block;
     vertical-align: top;
     width: 160px;
     height: 30px;
-    margin: 10px;
-    background: #8cb7c7 url('../images/icon-submit-alternative.png') no-repeat 15px 5px;
-    border: 1px solid #8cb7c7;
+    margin: 10px auto;
+    background: #ff7900 url('../images/icon-submit-alternative.png') no-repeat 5px 4px;
+    border: 1px solid #ff7900;
     letter-spacing: normal;
     color: #ffffff;
     font-size: 15px;
@@ -1362,20 +1444,18 @@ nav ul li:last-child a {
     -webkit-border-radius: 8px;
     -khtml-border-radius: 8px;
     border-radius: 8px;
-    box-shadow: 2px 2px 0 0 #8cb7c7;
-    -webkit-box-shadow: 2px 2px 0 0 #8cb7c7;
-    -moz-box-shadow: 2px 2px 0 0 #8cb7c7;
+    box-shadow: 2px 2px 0 0 #156774;
+    -webkit-box-shadow: 2px 2px 0 0 #156774;
+    -moz-box-shadow: 2px 2px 0 0 #156774;
     position: relative;
     z-index: 1;
     text-align: right;
-}
-.form-callback-short .validatr-message {
-    left: 70px!important;
+    padding-right: 10px;
 }
 /* end of window-callback-short */
 
 /************* MEDIA QUERIES **************/
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
     .block-content {
         width: 750px;
     }
@@ -1402,12 +1482,13 @@ nav ul li:last-child a {
         letter-spacing: normal;
     }
     .main-panel {
-        width: 490px;
+        width: 485px;
     }
     .consulting-block {
         border-top: none;
     }
     .service-info-page .on-map {
+        width: 95%;
         margin: 0 auto;
     }
     .footer {
@@ -1445,11 +1526,23 @@ nav ul li:last-child a {
     .breadcrumbs li p {
         padding: 0;
     }
+    .work-steps .steps {
+        padding: 15px 0;
+    }
+    .work-steps .steps>li {
+        display: block;
+        margin: 0 auto!important;
+        width: 300px;
+        padding-left: 80px;
+    }
+    .window-callback-short {
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
     .block-content {
-        width: 100%;
+        width: 690px;
     }
     .logo-header, .phone-header {
         float: none;
@@ -1499,6 +1592,9 @@ nav ul li:last-child a {
         text-decoration: underline;
         cursor: pointer;
     }
+    .main-panel {
+        width: 425px;
+    }
     .service-info-page .form-make-order.form-top {
         float: none;
         width: 100%;
@@ -1513,20 +1609,36 @@ nav ul li:last-child a {
     .services-cost .service-name {
         border-right: 2px solid #ffffff;
     }
-    .work-steps .steps {
-        padding: 15px 0;
-    }
-    .work-steps .steps>li {
-        display: block;
-        margin: 0 auto!important;
-        width: 100%;
-        padding-left: 80px;
-    }
+
     .service-info-page .on-map {
         width: 100%;
     }
+    .why-we ul li {
+        width: 80%;
+        margin: 10px 0 10px 5%;
+    }
+}
+
+@media (max-width: 700px) {
+    .block-content {
+        width: 100%;
+    }
+    .side-panel {
+        float: none;
+        margin: 20px auto 0;
+    }
+    .main-panel {
+        float: none;
+        width: 100%;
+    }
+    .footer-links {
+        width: 70%;
+    }
+}
+
+@media (max-width: 640px) {
     .footer {
-        height: 300px;
+        height: 210px;
     }
     .footer .block-content {
         text-align: left;
@@ -1534,10 +1646,10 @@ nav ul li:last-child a {
     .logo-footer {
         float: none;
         display: block;
-        margin: 20px auto;
+        margin: 0 auto 10px;
     }
     .footer-links {
-        padding: 15px 0;
+        padding: 10px 0;
         width: 100%;
         border: none;
         border-top: 1px solid #ffffff;
@@ -1545,8 +1657,27 @@ nav ul li:last-child a {
     .footer-links li {
         margin-right: 10px;
     }
+    .web-studio-link {
+        padding-top: 0;
+    }
     .wrapper {
-        padding: 0 10px 295px;
+        padding: 0 10px 210px;
+    }
+    .form-callback-full {
+        width: 450px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 520px) {
+    .footer {
+        height: 240px;
+    }
+    .wrapper {
+        padding: 0 10px 240px;
+    }
+    .footer-links {
+        padding: 10px 0 0;
     }
 }
 
@@ -1570,6 +1701,32 @@ nav ul li:last-child a {
     }
     .why-we ul li .item {
         width: 100%;
+    }
+    .form-callback-full {
+        width: 315px;
+        height: 500px;
+    }
+    .form-callback-full h2 {
+        line-height: 1;
+    }
+    .form-callback-full p {
+        padding: 0 25px;
+    }
+    .form-callback-full .form-field-label {
+        display: block;
+        margin: 5px 42px 0;
+        text-align: left;
+    }
+    .form-callback-full .rel-wrap {
+        margin: 5px 42px;
+    }
+    .form-callback-full .form-field-label:before {
+        left: 10px;
+        top: 25px;
+        right: auto;
+    }
+    .form-callback-full .form-field-textarea {
+        width: 290px;
     }
 }
 

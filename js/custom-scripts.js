@@ -27,7 +27,7 @@ $(document).ready(function () {
         $('.user-phone').mask("+7(999) 999-99-99");
     });
 
-    /*** window-callback ***/
+    /*** window-callback-short ***/
     $('.leave-order').click(function () {
         $('.window-callback-short').fadeIn();
     });
@@ -36,6 +36,14 @@ $(document).ready(function () {
         $target = $(event.target);
         if (!$target.closest($('.form-callback-short')).length) $('.window-callback-short').fadeOut();
     });
-    /*** the end of the window-callback script ***/
+    /*** the end of the window-callback-short script ***/
+
+    /*** window-callback-full ***/
+    $('.window-callback-full').click(function (event) {
+        $target = $(event.target);
+        if (!$target.closest($('.form-callback-full')).length) $('.window-callback-full').fadeOut();
+        if ($target.hasClass('close-marker')) $('.window-callback-full').fadeOut();
+    });
+    /*** the end of the window-callback-full script ***/
 
 });
