@@ -34,7 +34,7 @@
 
                 </div>
 
-                <button class="button-orange">Заказать сейчас</button>
+                <button class="button-orange get-callback">Заказать сейчас</button>
 
             </div>
 
@@ -100,11 +100,11 @@
 
                     <p>и получите <span>БЕСПЛАТНУЮ</span> консультацию</p>
 
-                    <label class="form-field-wrap name-wrap"><input data-message="Некорректно" class="form-field" type="text" placeholder="Ваше имя" required/></label>
+                    <label class="form-field-wrap name-wrap"><input pattern="^[А-Яа-я]+$" data-message="Некорректно" id="top-user-name" class="form-field" type="text" placeholder="Ваше имя" required/></label>
 
-                    <label class="form-field-wrap email-wrap"><input data-message="Некорректно" class="form-field" type="email" placeholder="Ваш e-mail" required/></label>
+                    <label class="form-field-wrap email-wrap"><input data-message="Некорректно" id="top-user-email" class="form-field" type="email" placeholder="Ваш e-mail" required/></label>
 
-                    <label class="form-field-wrap phone-wrap"><input data-message="Некорректно" class="form-field user-phone" type="tel" placeholder="Ваш телефон" required/></label>
+                    <label class="form-field-wrap phone-wrap"><input data-message="Некорректно" id="top-user-phone" class="form-field user-phone" type="tel" placeholder="Ваш телефон" required/></label>
 
                     <input type="submit" value="Оставить заявку"/>
 
@@ -244,11 +244,11 @@
 
                         <p>Вы можете оставить заявку прямо сейчас.<br>Просто заполните форму и наши консультанты свяжутся с вами.</p>
 
-                        <label class="form-field-wrap name-wrap"><input data-message="Некорректно" class="form-field ph-italic" type="text" placeholder="Ваше имя" required/></label>
+                        <label class="form-field-wrap name-wrap"><input pattern="^[А-Яа-я]+$" data-message="Некорректно" id="short-user-name" class="form-field ph-italic" type="text" placeholder="Ваше имя" required/></label>
 
-                        <label class="form-field-wrap email-wrap"><input data-message="Некорректно" class="form-field ph-italic" type="email" placeholder="Ваш e-mail" required/></label>
+                        <label class="form-field-wrap email-wrap"><input data-message="Некорректно" id="short-user-email" class="form-field ph-italic" type="email" placeholder="Ваш e-mail" required/></label>
 
-                        <label class="form-field-wrap phone-wrap"><input data-message="Некорректно" class="form-field user-phone ph-italic" type="tel" placeholder="Ваш телефон" required/></label>
+                        <label class="form-field-wrap phone-wrap"><input data-message="Некорректно" id="short-user-phone" class="form-field user-phone ph-italic" type="tel" placeholder="Ваш телефон" required/></label>
 
                         <input type="submit" value="Оставить заявку"/>
 
@@ -431,11 +431,11 @@
 
                     <p>и получите <span>БЕСПЛАТНУЮ</span> консультацию</p>
 
-                    <label class="form-field-wrap name-wrap"><input data-message="Некорректно" class="form-field" type="text" placeholder="Ваше имя" required/></label>
+                    <label class="form-field-wrap name-wrap"><input pattern="^[А-Яа-я]+$" data-message="Некорректно" id="bottom-user-name" class="form-field" type="text" placeholder="Ваше имя" required/></label>
 
-                    <label class="form-field-wrap email-wrap"><input data-message="Некорректно" class="form-field" type="email" placeholder="Ваш e-mail" required/></label>
+                    <label class="form-field-wrap email-wrap"><input data-message="Некорректно" id="bottom-user-email" class="form-field" type="email" placeholder="Ваш e-mail" required/></label>
 
-                    <label class="form-field-wrap phone-wrap"><input data-message="Некорректно" class="form-field user-phone" type="tel" placeholder="Ваш телефон" required/></label>
+                    <label class="form-field-wrap phone-wrap"><input data-message="Некорректно" id="bottom-user-phone" class="form-field user-phone" type="tel" placeholder="Ваш телефон" required/></label>
 
                     <input type="submit" value="Оставить заявку"/>
 
@@ -496,7 +496,7 @@
         <p>Вы можете оставить заявку прямо сейчас.<br>Просто заполните форму и наши консультанты свяжутся с вами.</p>
 
         <label for="full-user-name" class="form-field-label name-wrap">Представьтесь:</label>
-        <div class="rel-wrap"><input data-message="Некорректно" id="full-user-name" class="form-field ph-italic" type="text" placeholder="Ваше имя" required/></div>
+        <div class="rel-wrap"><input pattern="^[А-Яа-я]+$" data-message="Некорректно" id="full-user-name" class="form-field ph-italic" type="text" placeholder="Ваше имя" required/></div>
 
         <label for="full-user-email" class="form-field-label email-wrap">E-mail:</label>
         <div class="rel-wrap"><input data-message="Некорректно" id="full-user-email" class="form-field ph-italic" type="email" placeholder="Ваш e-mail" required/></div>
