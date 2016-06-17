@@ -1,19 +1,20 @@
 $(document).ready(function () {
 
-    function windowSize(){
-        if ($(window).width() < '762'){
-            var formTop = $('.service-info-page .form-top');
-            formTop.insertBefore($('.services-cost'));
+    $(window).resize(function(){
+        if ($(window).width() < '1024'){
+            $('#form-top').insertBefore($('.second-text'));
+        } else {
+            $('#form-top').insertBefore($('.first-text'));
         }
-    }
-    jQuery(window).load(windowSize);
+    });
 
     $('.mobile-menu').click(function() {
         $('nav ul').slideToggle();
     });
 
     $('input[type="submit"]').click(function() {
-        $(this).parent().find('.form-field').css('border', '1px solid #ff8a00');
+        $(this).parent().find('.form-field:invalid').css('border', '1px solid #ff8a00');
+        $(this).parent().find('.form-field:valid').css('border', '1px solid transparent');
     });
 
     jQuery(function($) {

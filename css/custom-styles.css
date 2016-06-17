@@ -352,8 +352,8 @@ nav ul li:last-child a {
 .form-make-order .form-field {
     display: block;
     width: 100%;
-    font-size: 20px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 18px;
     padding: 3px 10px 5px 58px;
     height: 40px;
     font-style: normal;
@@ -507,6 +507,7 @@ nav ul li:last-child a {
     font-family: "Calibri", sans-serif;
     font-size: 32px;
     margin: 5px 0;
+    padding: 0;
 }
 /* end of form make-order */
 
@@ -1260,6 +1261,119 @@ nav ul li:last-child a {
 }
 /* end of window-callback-short */
 
+/* window-callback-full */
+.window-callback-full {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(51, 51, 51 ,0.4);
+    display: none;
+    z-index: 10;
+}
+.form-callback-full {
+    position: absolute;
+    width: 400px;
+    height: 420px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #629db1 repeating-linear-gradient(-45deg, transparent, transparent 2px, rgba(92, 151, 171, .5) 2px, rgba(92, 151, 171, .5) 5px);
+    text-align: center;
+    padding: 10px;
+    z-index: 10;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+.form-callback-short h2 {
+    font-family: "Calibri", sans-serif;
+    font-size: 25px;
+    color: #ffe100;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+.form-callback-short p {
+    font-family: "Calibri", sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+}
+.form-callback-short .form-field-wrap {
+    display: inline-block;
+    vertical-align: top;
+    width: 160px;
+    height: 30px;
+    margin: 10px 5px;
+    position: relative;
+}
+.form-callback-short .form-field {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    line-height: 30px;
+    padding: 0 10px 2px 35px;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-family: tahoma, Helvetica, Arial, sans-serif;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    border-radius: 8px;
+    background: #ffffff;
+}
+.form-callback-short .form-field-wrap:before {
+    content: '';
+    display: block;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    background: url("../images/sprite-form.png") no-repeat left center;
+    background-size: cover;
+}
+.form-callback-short .email-wrap:before {
+    background: url("../images/sprite-form.png") no-repeat center;
+    background-size: cover;
+}
+.form-callback-short .phone-wrap:before {
+    background: url("../images/sprite-form.png") no-repeat right center;
+    background-size: cover;
+}
+.form-callback-short input[type="submit"] {
+    display: inline-block;
+    vertical-align: top;
+    width: 160px;
+    height: 30px;
+    margin: 10px;
+    background: #8cb7c7 url('../images/icon-submit-alternative.png') no-repeat 15px 5px;
+    border: 1px solid #8cb7c7;
+    letter-spacing: normal;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 30px;
+    font-family: 'Colibri', sans-serif;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 0 0 #8cb7c7;
+    -webkit-box-shadow: 2px 2px 0 0 #8cb7c7;
+    -moz-box-shadow: 2px 2px 0 0 #8cb7c7;
+    position: relative;
+    z-index: 1;
+    text-align: right;
+}
+.form-callback-short .validatr-message {
+    left: 70px!important;
+}
+/* end of window-callback-short */
+
 /************* MEDIA QUERIES **************/
 @media (max-width: 1024px) {
     .block-content {
@@ -1287,14 +1401,8 @@ nav ul li:last-child a {
         font-family: "Calibri", sans-serif;
         letter-spacing: normal;
     }
-    .side-panel {
-        float: none;
-        width: 400px;
-        margin: 20px auto;
-    }
     .main-panel {
-        float: none;
-        width: 100%;
+        width: 490px;
     }
     .consulting-block {
         border-top: none;
@@ -1328,14 +1436,14 @@ nav ul li:last-child a {
         width: 95%;
         margin: 0 2.5%;
     }
-    .wrapper > .block-content {
-        padding: 20px 5px 40px;
-    }
     .services-cost .leave-order, .services-cost .or, .services-cost .phone-number {
         float: none;
         display: block;
         margin: 5px auto;
         width: 280px;
+    }
+    .breadcrumbs li p {
+        padding: 0;
     }
 }
 
