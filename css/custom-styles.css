@@ -68,12 +68,17 @@ html, body {
     background: linear-gradient(to bottom,  #daf3f7 0%,#ffffff 520px,#ffffff 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#daf3f7', endColorstr='#ffffff',GradientType=0);
     overflow: hidden;
-    padding: 0 10px 150px;
+    padding: 0 10px 95px;
+}
+.wrapper>.block-content {
+    border-left: 1px solid #e0e9f0;
+    border-right: 1px solid #e0e9f0;
+    padding: 20px 5px 40px 0;
+    margin: -5px auto 0;
 }
 
 .block-content {
-    width: 100%;
-    max-width: 1000px;
+    width: 1000px;
     margin: 0 auto;
 }
 
@@ -128,6 +133,9 @@ h2 {
 }
 
 /* navigation */
+nav .mobile-menu {
+    display: none;
+}
 nav ul {
     width: 100%;
     text-align: center;
@@ -145,7 +153,6 @@ nav ul li a {
     text-decoration: none;
     color: #ffffff;
     letter-spacing: 1px;
-    margin: 0 -3px;
 }
 nav ul li:first-child a {
     background: #da0000;
@@ -189,7 +196,7 @@ nav ul li:last-child a {
 /* breadcrumbs */
 .breadcrumbs {
     display: inline-block;
-    margin: 5px 0;
+    margin: 5px 0 5px 2%;
 }
 .breadcrumbs li p, .breadcrumbs li a {
     font-size: 12px;
@@ -330,10 +337,6 @@ nav ul li:last-child a {
     width: 230px;
     margin: 10px auto 0;
     position: relative;
-    background: #ffffff;
-    -moz-border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -khtml-border-radius: 8px;
 }
 .form-make-order .form-field {
     display: block;
@@ -403,7 +406,7 @@ nav ul li:last-child a {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    padding: 10px;
+    padding: 0 10px;
     margin: 55px 0 0 15px;
 }
 .form-make-order.form-top:before {
@@ -480,9 +483,6 @@ nav ul li:last-child a {
 /* end of form make-order */
 
 /* header */
-.header {
-    margin-bottom: 1%;
-}
 .header-top {
     margin-top: 10px;
     background-color: #ffffff;
@@ -493,6 +493,7 @@ nav ul li:last-child a {
     -moz-box-shadow: 0 1px 2px 0 #cad0d7;
     position: relative;
     z-index: 1;
+    text-align: center;
 }
 .logo-header {
     display: block;
@@ -503,6 +504,8 @@ nav ul li:last-child a {
     background-size: cover;
 }
 .phone-header {
+    display: block;
+    width: 250px;
     padding: 20px 23px 10px 0;
 }
 .phone-header .phone-number {
@@ -686,6 +689,7 @@ nav ul li:last-child a {
     line-height: 1.5;
     text-align: justify;
     text-indent: 35px;
+    padding-right: 10px;
 }
 /* side-panel */
 .side-menu-title {
@@ -996,14 +1000,18 @@ nav ul li:last-child a {
     text-align: left;
     position: relative;
 }
-.why-we ul li:before {
-    content: '';
-    display: block;
+.why-we ul li .item {
+    display: inline-block;
+    vertical-align: middle;
+    width: 80%;
+}
+.why-we ul li .item-mark {
+    display: inline-block;
+    vertical-align: middle;
     width: 34px;
     height: 41px;
-    position: absolute;
-    left: -50px;
-    top: 3px;
+    margin-right: 20px;
+
     background: url('../images/icon-list-mark.png') no-repeat center;
     background-size: cover;
 }
@@ -1018,6 +1026,7 @@ nav ul li:last-child a {
     font-family: Tahoma, sans-serif;
     font-size: 12px;
     color: #ffffff;
+    padding: 0;
 }
 
 /* end of why-we */
@@ -1102,6 +1111,7 @@ nav ul li:last-child a {
 }
 .service-info-page .on-map {
     display: block;
+    width: 710px;
     border: 1px solid #367196;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -1113,3 +1123,228 @@ nav ul li:last-child a {
 }
 /* end of contact-info */
 /***** END OF SERVICE INFO PAGE ***********/
+
+/************* MEDIA QUERIES **************/
+@media (max-width: 1024px) {
+    .block-content {
+        width: 750px;
+    }
+    .header-middle .tagline-wrap {
+        width: 100%;
+    }
+    .header-middle .tagline {
+        padding: 60px 30px 20px;
+        text-align: center;
+    }
+    .header-middle .tagline span {
+        text-align: center;
+    }
+    .header-middle button {
+        display: block;
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+    nav ul li a {
+        font-size: 14px;
+        line-height: 15px;
+        font-family: "Calibri", sans-serif;
+        letter-spacing: normal;
+    }
+    .side-panel {
+        float: none;
+        width: 400px;
+        margin: 20px auto;
+    }
+    .main-panel {
+        float: none;
+        width: 100%;
+    }
+    .consulting-block {
+        border-top: none;
+    }
+    .service-info-page .on-map {
+        margin: 0 auto;
+    }
+    .footer {
+        height: 150px;
+    }
+    .footer-links {
+        width: 66%;
+        border-right: none;
+        padding-left: 20px;
+    }
+    .web-studio-link {
+        width: 100%;
+        margin: 0;
+    }
+    .wrapper {
+        padding: 0 10px 145px;
+    }
+    .service-info-page p {
+        padding: 0 10px;
+    }
+    .services-cost {
+        width: 95%;
+        margin: 60px 2.5% 0;
+    }
+    .work-steps, .why-we {
+        width: 95%;
+        margin: 0 2.5%;
+    }
+    .wrapper > .block-content {
+        padding: 20px 5px 40px;
+    }
+    .services-cost .leave-order, .services-cost .or, .services-cost .phone-number {
+        float: none;
+        display: block;
+        margin: 5px auto;
+        width: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .block-content {
+        width: 100%;
+    }
+    .logo-header, .phone-header {
+        float: none;
+        margin: 10px auto;
+        width: 223px;
+        padding: 20px 10px 10px 10px;
+    }
+    .phone-header .phone-number {
+        font-size: 20px;
+    }
+    .header-middle, .header-middle .tagline {
+        min-height: 180px;
+    }
+    .header-middle .tagline {
+        padding: 30px 30px 20px;
+    }
+    .header-middle .tagline, .header-middle .tagline span {
+        font-size: 24px;
+    }
+    .header-middle button {
+        bottom: 20px;
+    }
+    nav ul {
+        display: none;
+    }
+    nav ul li {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+    nav ul li a {
+        border: none!important;
+        -webkit-border-radius: 0!important;
+        -moz-border-radius: 0!important;
+        border-radius: 0!important;
+        font-size: 16px;
+    }
+    nav .mobile-menu {
+        display: block;
+        font-family: "Calibri Bold", sans-serif;
+        font-size: 25px;
+        color: #ffffff;
+        text-align: center;
+        background: #367196;
+        margin-top: 10px;
+        padding: 10px 0;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .service-info-page .form-make-order.form-top {
+        float: none;
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+        margin:  20px auto 0;
+        padding: 20px 0;
+    }
+    .services-cost .service-unit {
+        display: none;
+    }
+    .services-cost .service-name {
+        border-right: 2px solid #ffffff;
+    }
+    .work-steps .steps {
+        padding: 15px 0;
+    }
+    .work-steps .steps>li {
+        display: block;
+        margin: 0 auto!important;
+        width: 100%;
+        padding-left: 80px;
+    }
+    .service-info-page .on-map {
+        width: 100%;
+    }
+    .footer {
+        height: 300px;
+    }
+    .footer .block-content {
+        text-align: left;
+    }
+    .logo-footer {
+        float: none;
+        display: block;
+        margin: 20px auto;
+    }
+    .footer-links {
+        padding: 15px 0;
+        width: 100%;
+        border: none;
+        border-top: 1px solid #ffffff;
+    }
+    .footer-links li {
+        margin-right: 10px;
+    }
+    .wrapper {
+        padding: 0 10px 295px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-middle .tagline, .header-middle .tagline span {
+        line-height: 28px;
+    }
+    .header-middle, .header-middle .tagline {
+        min-height: 160px;
+    }
+    .side-panel {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .why-we ul li .item-mark {
+        display: none;
+    }
+    .why-we ul li {
+        width: 80%;
+        margin: 10px 0;
+    }
+    .why-we ul li .item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 370px) {
+    .header-middle, .header-middle .tagline {
+        min-height: 200px;
+    }
+    .services-cost .leave-order, .services-cost .or, .services-cost .phone-number {
+        width: 260px;
+    }
+    .work-steps .steps>li {
+        padding-left: 60px;
+    }
+    .why-we ul li {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .footer-links li {
+        margin-right: 25px;
+    }
+}
+/********* END OF MEDIA QUERIES ***********/
