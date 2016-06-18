@@ -1,17 +1,5 @@
-@font-face {
-    font-family: 'Calibri';
-    src: url('../fonts/Colibri.eot');
-    src: url('../fonts/Colibri.eot?#iefix') format('embedded-opentype'), url('../fonts/Colibri.woff') format('woff'), url('../fonts/Colibri.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Calibri Bold';
-    src: url('../fonts/Colibri_b.eot');
-    src: url('../fonts/Colibri_b.eot?#iefix') format('embedded-opentype'), url('../fonts/Colibri_b.woff') format('woff'), url('../fonts/Colibri_b.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+@font-face {font-family: 'Calibri'; src: url('../fonts/Colibri.ttf');}
+@font-face {font-family: 'Calibri Bold';src: url('../fonts/Colibri_b.ttf');}
 @font-face {
     font-family: 'pfd-m';
     src: url('../fonts/pfd-m.eot');
@@ -105,6 +93,9 @@ html, body {
 .form-field, .form-field:focus, .form-field:hover {
     border: 1px solid transparent;
 }
+.form-field {
+    color: #5d99ad;
+}
 
 ul li {
     display: inline-block;
@@ -120,7 +111,7 @@ ul li {
     width: 250px;
 }
 .main-panel {
-    width: 730px;
+    width: 715px;
 }
 .clearfix:after {
     content: '';
@@ -221,6 +212,7 @@ nav ul li:last-child a {
     font-size: 12px;
     font-family: Verdana, sans-serif;
     text-indent: 0;
+    color: #005c84;
 }
 .breadcrumbs li a:after {
     display: inline-block;
@@ -244,7 +236,7 @@ nav ul li:last-child a {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    padding: 20px 10px 10px;
+    padding: 10px;
 }
 .contacts:before, .form-make-order:before {
     content: '';
@@ -287,6 +279,7 @@ nav ul li:last-child a {
     font-weight: 100;
     text-align: left;
     margin-bottom: 15px;
+    padding: 0;
 }
 .wrapper .contacts .address {
     text-align: center;
@@ -300,14 +293,15 @@ nav ul li:last-child a {
     margin: 20px 0 0 0;
 }
 .contacts .email, .contacts .url {
+    display: inline-block;
     padding: 0 0 0 40px;
     color: #e5f044;
     text-decoration: underline;
     font-size: 20px;
     font-family: 'Colibri', sans-serif;
     margin-bottom: 5px;
-    display: block;
     position: relative;
+    margin-right: 20px;
 }
 .contacts .email:before, .contacts .url:before {
     content: '';
@@ -315,14 +309,14 @@ nav ul li:last-child a {
     width: 23px;
     height: 17px;
     position: absolute;
-    left: 33px;
+    left: 5px;
     top: 7px;
     background: url('../images/sprite-contacts.png') no-repeat left center;
     background-size: cover;
 }
 .contacts .url:before {
     top: 7px;
-    left: 28px;
+    left: 0;
     background: url('../images/sprite-contacts.png') no-repeat right center;
     background-size: cover;
 }
@@ -408,17 +402,17 @@ nav ul li:last-child a {
     background-size: cover;
 }
 .form-make-order input[type="submit"] {
-    width: 225px;
-    height: 38px;
+    width: 230px;
+    height: 40px;
     display: block;
     margin: 20px auto 0;
-    background: #fe7900 url('../images/icon-submit.png') no-repeat 15px center;
+    background: #fe7900 url('../images/icon-submit.png') no-repeat 20px center;
     border: 1px solid #fe7900;
-    padding: 5px 0 10px 37px;
+    padding: 0 0 0 30px;
     letter-spacing: normal;
     color: #fff;
-    font-size: 22px;
-    line-height: 25px;
+    font-size: 20px;
+    line-height: 35px;
     font-family: 'Colibri', sans-serif;
     -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -442,7 +436,7 @@ nav ul li:last-child a {
     -moz-border-radius: 5px;
     border-radius: 5px;
     padding: 0 10px;
-    margin: 55px 10px 0 15px;
+    margin: 55px 0 13px 13px;
 }
 .form-make-order.form-top:before {
     display: none;
@@ -463,9 +457,10 @@ nav ul li:last-child a {
     font-family: "Calibri", sans-serif;
     text-indent: inherit;
     line-height: 1;
-    letter-spacing: 1px;
+    letter-spacing: normal;
     text-align: center;
-    font-size: 15px;
+    font-size: 16px;
+    padding: 0;
 }
 .form-make-order.form-top p span {
     display: inline-block;
@@ -500,15 +495,18 @@ nav ul li:last-child a {
     background-size: cover;
 }
 .form-make-order.form-top input[type="submit"] {
+    height: 35px;
     margin: 10px auto;
-    background: #fe7900 url('../images/icon-submit.png') no-repeat 20px center;
-    border: 1px solid #fe7900;
-    padding: 5px 0 7px 30px;
-    font-size: 18px;
-    line-height: 23px;
-    box-shadow: 2px 2px 0 0 #ba5736;
-    -webkit-box-shadow: 2px 2px 0 0 #ba5736;
-    -moz-box-shadow: 2px 2px 0 0 #ba5736;
+    background: #ffac00 url('../images/icon-submit.png') no-repeat 20px center;
+    border: 1px solid #ffac00;
+    padding: 0 0 0 30px;
+    font-size: 16px;
+    line-height: 32px;
+    box-shadow: 2px 2px 0 0 #bb5938;
+    -webkit-box-shadow: 2px 2px 0 0 #bb5938;
+    -moz-box-shadow: 2px 2px 0 0 #bb5938;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 .form-make-order.form-top .phone-number {
     font-family: "Calibri", sans-serif;
@@ -572,24 +570,37 @@ nav ul li:last-child a {
     line-height: 1.5;
 }
 .header-middle {
-    background: url("../images/background-header.jpg") no-repeat right -34px;
     min-height: 210px;
     margin-top: -20px;
-    background-size: 41.5% auto;
     position: relative;
 }
+.header-image {
+    display: block;
+    width: 400px;
+    height: 200px;
+    background: url("../images/background-header.jpg") no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top:0;
+    right: 0;
+    -webkit-border-radius: 0 0 10px 0;
+    -moz-border-radius: 0 0 10px 0;
+    border-radius: 0 0 10px 0;
+}
 .header-middle .tagline-wrap {
-    width: 58.33333333%;
+    width: 600px;
 }
 .header-middle .tagline {
     background: #5f97ba repeating-linear-gradient(-45deg, transparent, transparent 1px, rgba(110, 166, 200, .5) 1px, rgba(110, 166, 200, .5) 5px);
     min-height: 200px;
-    border-radius: 0 5px 5px 5px;
     color: #ffffff;
     line-height: 40px;
     font-family: "Calibri Bold", sans-serif;
     font-size: 33px;
     padding: 60px 37px 20px 49px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
 }
 .header-middle .tagline span {
     display: block;
@@ -606,7 +617,7 @@ nav ul li:last-child a {
     font-size: 18px;
     line-height: 18px;
     position: absolute;
-    left: 45%;
+    left: 47%;
     bottom: 35px;
 }
 /* end of header */
@@ -711,9 +722,9 @@ nav ul li:last-child a {
 /* end of footer */
 
 /********* SERVICE INFO PAGE **************/
-.wrapper .service-info-page {
-    padding-left: 5px;
-    padding-right: 5px;
+.wrapper .service-info-page, .wrapper .articles-page {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .service-info-page .sub-title {
     font-family: 'Calibri', sans-serif;
@@ -722,6 +733,7 @@ nav ul li:last-child a {
     color: #005c84;
     margin: 10px 0;
     text-align: center;
+    line-height: 1;
 }
 .service-info-page p {
     font-family: Verdana, sans-serif;
@@ -730,7 +742,6 @@ nav ul li:last-child a {
     line-height: 1.5;
     text-align: justify;
     text-indent: 35px;
-    padding-right: 10px;
 }
 /* side-panel */
 .side-menu-title {
@@ -762,16 +773,21 @@ nav ul li:last-child a {
     background: #00759b;
     padding: 6px 0;
 }
+.side-menu .active a {
+    color: #ff7900;
+}
 .side-menu>li {
-    border-bottom: 3px solid #005c84;
+    border-bottom: 2px solid #005c84;
 }
 .side-menu>li:last-child {
     -webkit-border-radius: 0 0 10px 10px;
     -moz-border-radius: 0 0 10px 10px;
     border-radius: 0 0 10px 10px;
+    border-bottom: none;
 }
 .side-menu>li.opened {
     background: #005c84;
+    padding: 6px 0 3px;
 }
 .side-menu li a {
     display: inline-block;
@@ -781,7 +797,7 @@ nav ul li:last-child a {
     text-decoration: none;
 }
 .side-menu li a:hover {
-    text-decoration: underline;
+    color: #ff7900;
 }
 .side-menu li a {
     font-family: Tahoma, sans-serif;
@@ -809,7 +825,7 @@ nav ul li:last-child a {
 /* consulting-block */
 .consulting-block {
     margin: 5px 0 0 0;
-    padding: 10px 0 0 0;
+    padding: 0;
     border-top: 1px dashed #82adbc;
 }
 .consulting-block ul {
@@ -817,6 +833,10 @@ nav ul li:last-child a {
 }
 .consulting-block ul li {
     margin: 15px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 /* end of consulting-block */
 
@@ -826,8 +846,8 @@ nav ul li:last-child a {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    width: 720px;
-    margin: 60px 10px 0 0;
+    width: 100%;
+    margin: 60px 0 0 0;
     position: relative;
     text-align: right;
     padding-bottom: 15px;
@@ -899,19 +919,20 @@ nav ul li:last-child a {
 .services-cost .see-all {
     margin-right: 2.5%;
     font-family: Verdana, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     color: #006e92;
 }
 .services-cost h4, .services-cost h4 span {
     text-align: center;
     margin: 15px 0;
     font-family: Verdana, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     color: #006e92;
-    font-weight: 100;
+    font-weight: 300;
 }
 .services-cost h4 span {
     text-transform: uppercase;
+    font-weight: 600;
 }
 .services-cost .leave-order {
     display: block;
@@ -926,14 +947,18 @@ nav ul li:last-child a {
     text-transform: uppercase;
     color: #ffffff;
     font-family: "Calibri Bold", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
+    -webkit-box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.25);
+    -moz-box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.25);
+    box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.25);
+    font-weight: 600;
 }
 .services-cost .phone-number {
     display: block;
     height: 45px;
-    line-height: 45px;
+    line-height: 40px;
     font-family: "Calibri", sans-serif;
-    font-size: 23px;
+    font-size: 26px;
     color: #006e92;
     text-align: center;
     text-indent: 0;
@@ -943,15 +968,15 @@ nav ul li:last-child a {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    border:  2px solid #006e92;
+    border:  2px solid #368da9;
 }
 .services-cost .or {
     display: inline-block;
     height: 45px;
-    width: 23%;
+    width: 20%;
     line-height: 45px;
     font-family: Verdana, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     color: #006e92;
     text-indent: 0;
     text-align: center;
@@ -960,7 +985,7 @@ nav ul li:last-child a {
 
 /* work-steps */
 .work-steps, .why-we {
-    width: 720px;
+    width: 100%;
 }
 .work-steps .sub-title, .why-we .sub-title {
     font-size: 26px;
@@ -993,12 +1018,15 @@ nav ul li:last-child a {
     border-radius: 0 0 10px 10px;
     text-align: center;
 }
+.work-steps .steps {
+    padding-bottom: 30px;
+}
 .work-steps .steps ul {
     width: 200px;
     text-align: left;
 }
 .work-steps .steps>li:first-child {
-    margin-right: 60px;
+    margin-right: 70px;
 }
 .work-steps .steps ul li {
     display: block;
@@ -1006,8 +1034,9 @@ nav ul li:last-child a {
     font-size: 14px;
     letter-spacing: 1px;
     color: #ffffff;
-    margin: 35px 0;
+    margin: 35px 0 0;
     position: relative;
+    font-weight: 600;
 }
 .work-steps .steps ul li:before {
     content: '1';
@@ -1107,18 +1136,6 @@ nav ul li:last-child a {
     border: 2px solid #e0e9f0;
     overflow: hidden;
 }
-/*.portfolio ul li .img-wrap:before {
-    content: '';
-    width: 101%;
-    height: 104%;
-    position: absolute;
-    left: -1%;
-    top: -2.5%;
-    border: 2px solid #e0e9f0;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-}*/
 .portfolio ul li img {
     display: block;
     width: 100%;
@@ -1126,6 +1143,10 @@ nav ul li:last-child a {
 }
 .portfolio .portfolio-link {
     text-decoration: none;
+    font-family: "Calibri", sans-serif;
+    font-size: 16px;
+    color: #006e92;
+    line-height: 1.1;
 }
 .portfolio .portfolio-link:hover {
     text-decoration: underline;
@@ -1133,16 +1154,16 @@ nav ul li:last-child a {
 .portfolio .see-all {
     display: block;
     text-align: center;
-    padding: 5px 0;
-    width: 160px;
-    font-family: "Calibri Bold", sans-serif;
+    width: 155px;
+    height: 30px;
+    font-family: "Calibri", sans-serif;
     font-size: 18px;
-    line-height: 18px;
+    line-height: 30px;
     color: #ffffff;
     background: #ff7900;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
     text-decoration: none;
     margin: 10px auto 30px;
 }
@@ -1158,15 +1179,18 @@ nav ul li:last-child a {
     color: #1a5d88;
     font-family: 'Calibri', sans-serif;
     font-weight: 100;
+    font-size: 26px;
 }
 .service-info-page .on-map {
     display: block;
-    width: 710px;
+    width: 100%;
     border: 1px solid #367196;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
     overflow: hidden;
+    position: relative;
+    z-index: 1;
 }
 .service-info-page .contacts, .service-info-page .form-make-order {
     margin: 20px 10px 0;
@@ -1175,6 +1199,7 @@ nav ul li:last-child a {
 /***** END OF SERVICE INFO PAGE ***********/
 
 /************ MAIN PAGE **************/
+
 .wrapper .main-page {
     padding-left: 30px;
     padding-right: 30px;
@@ -1272,9 +1297,35 @@ nav ul li:last-child a {
 .main-page .contact-info .sub-title {
     margin: 15px 0 25px;
 }
-/********** END MAIN PAGE ************/
+
+/********** END OF MAIN PAGE ************/
+
+/********** ARTICLES PAGE ************/
 
 
+
+.articles-page .why-we, .articles-page .work-steps,
+.articles-page .why-we h3, .articles-page .work-steps h3 {
+    width: 100%;
+    margin: 20px auto 0;
+}
+.articles-page .why-we>ul, .articles-page .work-steps>ul {
+    width: 100%;
+    padding: 10px 0 20px;
+}
+.articles-page .work-steps .steps > li {
+    padding-left: 70px;
+}
+.articles-page .work-steps .steps ul {
+    width: auto;
+    padding-right: 20px;
+}
+.articles-page .work-steps .steps ul li {
+    height: 40px;
+    margin: 15px 0 0;
+}
+
+/********** END OF ARTICLES PAGE ************/
 
 /************MODAL WINDOWS ************/
 
@@ -1466,8 +1517,12 @@ nav ul li:last-child a {
     width: 30%;
     text-align: right;
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 5px;
     position: relative;
+    color: #ffffff;
+    margin-left: 20px;
+    font-size: 12px;
+    font-family: "Calibri", sans-serif;
 }
 .form-callback-full .rel-wrap {
     display: inline-block;
@@ -1513,6 +1568,11 @@ nav ul li:last-child a {
      border-radius: 15px;
      background: #ffffff;
      resize: none;
+     border: none;
+     outline: none;
+     -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+     box-shadow: none;
  }
 .form-callback-full .form-field-label:before {
     content: '';
@@ -1580,6 +1640,9 @@ nav ul li:last-child a {
     .header-middle .tagline span {
         text-align: center;
     }
+    .header-image {
+        display: none;
+    }
     .header-middle button {
         display: block;
         margin: auto;
@@ -1593,14 +1656,7 @@ nav ul li:last-child a {
         letter-spacing: normal;
     }
     .main-panel {
-        width: 485px;
-    }
-    .consulting-block {
-        border-top: none;
-    }
-    .service-info-page .on-map {
-        width: 95%;
-        margin: 0 auto;
+        width: 465px;
     }
     .footer {
         height: 150px;
@@ -1617,17 +1673,6 @@ nav ul li:last-child a {
     .wrapper {
         padding: 0 10px 145px;
     }
-    .service-info-page p {
-        padding: 0 10px;
-    }
-    .services-cost {
-        width: 95%;
-        margin: 60px 2.5% 0;
-    }
-    .work-steps, .why-we {
-        width: 95%;
-        margin: 0 2.5%;
-    }
     .services-cost .leave-order, .services-cost .or, .services-cost .phone-number {
         float: none;
         display: block;
@@ -1638,7 +1683,7 @@ nav ul li:last-child a {
         padding: 0;
     }
     .work-steps .steps {
-        padding: 15px 0;
+        padding: 10px 0 35px 0;
     }
     .work-steps .steps>li {
         display: block;
@@ -1654,9 +1699,6 @@ nav ul li:last-child a {
     }
     .main-page .contact-info {
         text-align: center;
-    }
-    .main-page .on-map {
-        width: 100%;
     }
     .main-page .contacts, .main-page .form-bottom {
         margin: 20px 10px 0;
@@ -1712,16 +1754,15 @@ nav ul li:last-child a {
         background: #367196;
         margin-top: 10px;
         padding: 10px 0;
-        text-decoration: underline;
         cursor: pointer;
     }
     .main-panel {
-        width: 425px;
+        width: 410px;
     }
     .service-info-page .form-make-order.form-top {
         float: none;
         width: 100%;
-        max-width: 450px;
+        max-width: 330px;
         height: auto;
         margin:  20px auto 0;
         padding: 20px 0;
@@ -1740,6 +1781,13 @@ nav ul li:last-child a {
         width: 80%;
         margin: 10px 0 10px 5%;
     }
+    .why-we>ul, .why-we h3, .work-steps .steps, .work-steps h3 {
+        width: 400px;
+        margin: 0 auto;
+    }
+    .why-we h3, .work-steps h3 {
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -1748,7 +1796,7 @@ nav ul li:last-child a {
     }
     .side-panel {
         float: none;
-        margin: 20px auto 0;
+        margin: 20px auto;
     }
     .main-panel {
         float: none;
@@ -1811,10 +1859,6 @@ nav ul li:last-child a {
     .header-middle, .header-middle .tagline {
         min-height: 160px;
     }
-    .side-panel {
-        width: 100%;
-        margin: 0 auto;
-    }
     .why-we ul li .item-mark {
         display: none;
     }
@@ -1855,6 +1899,9 @@ nav ul li:last-child a {
         padding-left: 20px;
         padding-right: 20px;
     }
+    .why-we>ul, .why-we h3, .work-steps .steps, .work-steps h3 {
+        width: 100%;
+    }
 }
 
 @media (max-width: 370px) {
@@ -1865,7 +1912,19 @@ nav ul li:last-child a {
         width: 260px;
     }
     .work-steps .steps>li {
-        padding-left: 60px;
+        width: 100%;
+        padding-left: 80px;
+    }
+    .work-steps .steps ul li {
+        padding-right: 10px;
+        height: 40px;
+        margin-top: 20px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .work-steps .steps ul li:before {
+        top: 3px;
     }
     .why-we ul li {
         width: 100%;

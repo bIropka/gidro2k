@@ -2,6 +2,12 @@ $(document).ready(function () {
 
     /** scripts for adaptive **/
 
+    if ($(window).width() < '1024'){
+        $('#form-top').insertBefore($('.second-text'));
+    } else {
+        $('#form-top').insertBefore($('.first-text'));
+    }
+
     $(window).resize(function(){
         if ($(window).width() < '1024'){
             $('#form-top').insertBefore($('.second-text'));
