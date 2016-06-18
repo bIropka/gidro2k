@@ -1,5 +1,8 @@
 $(document).ready(function () {
 
+    /** for gallery **/
+    $('.fancybox').fancybox();
+
     /** scripts for adaptive **/
 
     if ($(window).width() < '1024'){
