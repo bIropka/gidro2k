@@ -722,7 +722,7 @@ nav ul li:last-child a {
 /* end of footer */
 
 /********* SERVICE INFO PAGE **************/
-.wrapper .service-info-page, .wrapper .articles-page {
+.wrapper .service-info-page, .wrapper .articles-page, .wrapper .price-page {
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -1180,7 +1180,7 @@ nav ul li:last-child a {
     font-weight: 100;
     font-size: 26px;
 }
-.service-info-page .on-map {
+.on-map {
     display: block;
     width: 100%;
     border: 1px solid #367196;
@@ -1301,7 +1301,7 @@ nav ul li:last-child a {
 
 /********** ARTICLES PAGE ************/
 
-.articles-page .breadcrumbs {
+.articles-page .breadcrumbs, .price-page .breadcrumbs {
     width: 100%;
     border-bottom: 1px dashed #9cbeca;
     padding-bottom: 10px;
@@ -1519,6 +1519,81 @@ nav ul li:last-child a {
 }
 
 /********** END OF ARTICLES PAGE ************/
+
+/********** PRICE PAGE ************/
+
+.price-page .main-panel>h2 {
+    font-family: "Calibri", sans-serif;
+    font-size: 26px;
+    color: #005c84;
+    text-align: center;
+    margin: 10px 0 20px;
+    font-weight: 100;
+}
+.price-nav {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.price-nav li {
+    width: 300px;
+    text-align: left;
+    padding-left: 130px;
+    margin-bottom: 10px;
+}
+.price-nav li:nth-child(2n) {
+    width: 300px;
+    padding-left: 50px;
+}
+.price-nav li a {
+    display: inline-block;
+    font-family: "Verdana", sans-serif;
+    font-size: 12px;
+    color: #005c84;
+}
+.price-nav li a:before {
+    content: '\25ba';
+    display: inline-block;
+    font-family: "Verdana", sans-serif;
+    color: #7fbedb;
+    margin-right: 5px;
+}
+.price-page .services-cost {
+    margin-top: 30px;
+}
+.price-page .services-cost .sub-title {
+    display: block;
+    width: 99.5%;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #00759b;
+    font-weight: 100;
+    border: 1px dashed #9cbeca;
+    padding: 0;
+    margin: 2px auto 5px;
+    position: static;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.price-page .contact-info {
+    padding-top: 20px;
+    text-align: center;
+}
+.price-page .contact-info>h3 {
+    color: #1a5d88;
+    font-family: 'Calibri', sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.price-page .contacts, .price-page .form-make-order {
+    margin: 30px 10px 0;
+}
+
+/********** END OF PRICE PAGE ************/
 
 /************MODAL WINDOWS ************/
 
@@ -1903,6 +1978,14 @@ nav ul li:last-child a {
     .article-list .article-info {
         float: none;
         width: 100%;
+    }
+    .price-nav li {
+        width: 210px;
+        padding-left: 0;
+    }
+    .price-nav li:nth-child(2n) {
+        width: 210px;
+        padding-left: 0;
     }
 }
 

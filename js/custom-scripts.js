@@ -90,12 +90,8 @@ $(document).ready(function () {
     /*** window-callback-short ***/
 
     $('.leave-order').click(function () {
+        $(this).parent().append($('.window-callback-short'));
         $('.window-callback-short').fadeIn();
-    });
-
-    $('.window-callback-short').click(function (event) {
-        $target = $(event.target);
-        if (!$target.closest($('.form-callback-short')).length) $('.window-callback-short').fadeOut();
     });
 
     /*** the end of the window-callback-short script ***/
