@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    /** scripts for adaptive **/
+
     $(window).resize(function(){
         if ($(window).width() < '1024'){
             $('#form-top').insertBefore($('.second-text'));
@@ -12,10 +14,7 @@ $(document).ready(function () {
         $('nav ul').slideToggle();
     });
 
-    $('input[type="submit"]').click(function() {
-        $(this).parent().find('.form-field:invalid').css('border', '1px solid #ff8a00');
-        $(this).parent().find('.form-field:valid').css('border', '1px solid transparent');
-    });
+    /** end of scripts for adaptive **/
 
     /** validation **/
 
@@ -71,31 +70,42 @@ $(document).ready(function () {
         });
     });
 
-    jQuery(function($){
+    $(function($){
         $('.user-phone').mask("+7(999) 999-99-99");
+    });
+
+    $('input[type="submit"]').click(function() {
+        $(this).parent().find('.form-field:invalid').css('border', '1px solid #ff8a00');
+        $(this).parent().find('.form-field:valid').css('border', '1px solid transparent');
     });
 
     /** end of validation **/
 
     /*** window-callback-short ***/
+
     $('.leave-order').click(function () {
         $('.window-callback-short').fadeIn();
     });
+
     $('.window-callback-short').click(function (event) {
         $target = $(event.target);
         if (!$target.closest($('.form-callback-short')).length) $('.window-callback-short').fadeOut();
     });
+
     /*** the end of the window-callback-short script ***/
 
     /*** window-callback-full ***/
+
     $('.get-callback').click(function () {
         $('.window-callback-full').fadeIn();
     });
+
     $('.window-callback-full').click(function (event) {
         $target = $(event.target);
         if (!$target.closest($('.form-callback-full')).length) $('.window-callback-full').fadeOut();
         if ($target.hasClass('close-marker')) $('.window-callback-full').fadeOut();
     });
+
     /*** the end of the window-callback-full script ***/
 
 });
