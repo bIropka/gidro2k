@@ -1,30 +1,5 @@
 $(document).ready(function () {
 
-    /** for gallery **/
-    $('.fancybox').fancybox();
-
-    /** scripts for adaptive **/
-
-    if ($(window).width() < '1024'){
-        $('#form-top').insertBefore($('.second-text'));
-    } else {
-        $('#form-top').insertBefore($('.first-text'));
-    }
-
-    $(window).resize(function(){
-        if ($(window).width() < '1024'){
-            $('#form-top').insertBefore($('.second-text'));
-        } else {
-            $('#form-top').insertBefore($('.first-text'));
-        }
-    });
-
-    $('.mobile-menu').click(function() {
-        $('nav ul').slideToggle();
-    });
-
-    /** end of scripts for adaptive **/
-
     /** validation **/
 
     $(function($) {
@@ -89,6 +64,44 @@ $(document).ready(function () {
     });
 
     /** end of validation **/
+
+    /** scripts for adaptive **/
+    if ($(window).width() < '1024'){
+        $('#form-top').insertBefore($('.second-text'));
+    } else {
+        $('#form-top').insertBefore($('.first-text'));
+    }
+    if ($(window).width() < '701'){
+        $('.articles-page .work-steps-short').insertAfter($('.article-list + .page-navigation'));
+        $('.articles-page .why-we-short').insertAfter($('.article-list + .page-navigation'));
+
+    } else {
+        $('.articles-page .work-steps-short').insertAfter($('.side-menu'));
+        $('.articles-page .why-we-short').insertAfter($('.side-menu'));
+    }
+
+    $(window).resize(function(){
+        if ($(window).width() < '1024'){
+            $('#form-top').insertBefore($('.second-text'));
+        } else {
+            $('#form-top').insertBefore($('.first-text'));
+        }
+        if ($(window).width() < '701'){
+            $('.articles-page .work-steps-short').insertAfter($('.article-list + .page-navigation'));
+            $('.articles-page .why-we-short').insertAfter($('.article-list + .page-navigation'));
+
+        } else {
+            $('.articles-page .work-steps-short').insertAfter($('.side-menu'));
+            $('.articles-page .why-we-short').insertAfter($('.side-menu'));
+        }
+    });
+
+    $('.mobile-menu').click(function() {
+        $('nav ul').slideToggle();
+        $(this).toggleClass('opened');
+    });
+
+    /** end of scripts for adaptive **/
 
     /*** window-callback-short ***/
 
