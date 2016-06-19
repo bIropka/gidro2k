@@ -14,7 +14,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: Verdana, Helvetica, Arial, sans-serif;
+    font-family: "Calibri", sans-serif;
     color: #002878;
     font-size: 12px;
     line-height: 1.42;
@@ -122,7 +122,6 @@ ul li {
 
 .button-orange {
     color: #ffffff;
-    font-family: 'Calibri', sans-serif;
     text-align: center;
     letter-spacing: 1px;
     white-space: nowrap;
@@ -273,7 +272,6 @@ nav ul li:last-child a {
     line-height: 24px;
     font-size: 18px;
     color: #ffffff;
-    font-family: 'Calibri', sans-serif;
     letter-spacing: normal;
     text-indent: inherit;
     font-weight: 100;
@@ -286,7 +284,6 @@ nav ul li:last-child a {
     margin: 10px 0 15px;
 }
 .wrapper .contacts .phone-number {
-    font-family: 'Calibri', sans-serif;
     font-size: 30px;
     color: #f1f83e;
     text-align: center;
@@ -298,7 +295,6 @@ nav ul li:last-child a {
     color: #e5f044;
     text-decoration: underline;
     font-size: 20px;
-    font-family: 'Colibri', sans-serif;
     margin-bottom: 5px;
     position: relative;
     margin-right: 20px;
@@ -413,7 +409,6 @@ nav ul li:last-child a {
     color: #fff;
     font-size: 20px;
     line-height: 35px;
-    font-family: 'Colibri', sans-serif;
     -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
     -khtml-border-radius: 20px;
@@ -442,7 +437,6 @@ nav ul li:last-child a {
     display: none;
 }
 .form-make-order.form-top h2 {
-    font-family: "Calibri", sans-serif;
     font-size: 25px;
     position: relative;
     margin: 0;
@@ -454,7 +448,6 @@ nav ul li:last-child a {
     border-bottom: 1px solid #6d8c90;
 }
 .form-make-order.form-top p {
-    font-family: "Calibri", sans-serif;
     text-indent: inherit;
     line-height: 1;
     letter-spacing: normal;
@@ -464,7 +457,6 @@ nav ul li:last-child a {
 }
 .form-make-order.form-top p span {
     display: inline-block;
-    font-family: "Calibri", sans-serif;
     font-size: 16px;
 }
 .form-make-order.form-top .form-field {
@@ -509,7 +501,6 @@ nav ul li:last-child a {
     font-weight: 600;
 }
 .form-make-order.form-top .phone-number {
-    font-family: "Calibri", sans-serif;
     font-size: 32px;
     margin: 5px 0;
     padding: 0;
@@ -601,6 +592,7 @@ nav ul li:last-child a {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
+    font-weight: 600;
 }
 .header-middle .tagline span {
     display: block;
@@ -714,7 +706,6 @@ nav ul li:last-child a {
     display: block;
     color: #ffffff;
     font-style: italic;
-    font-family: 'Calibri', sans-serif;
 }
 .web-studio-link:hover .text {
     text-decoration: none;
@@ -722,12 +713,11 @@ nav ul li:last-child a {
 /* end of footer */
 
 /********* SERVICE INFO PAGE **************/
-.wrapper .service-info-page, .wrapper .articles-page, .wrapper .price-page {
+.wrapper .service-info-page, .wrapper .articles-page, .wrapper .price-page, .wrapper .portfolio-info-page, .wrapper .portfolio-list-page {
     padding-left: 10px;
     padding-right: 10px;
 }
 .service-info-page .sub-title {
-    font-family: 'Calibri', sans-serif;
     font-size: 22px;
     font-weight: 100;
     color: #005c84;
@@ -957,7 +947,6 @@ nav ul li:last-child a {
     display: block;
     height: 45px;
     line-height: 40px;
-    font-family: "Calibri", sans-serif;
     font-size: 26px;
     color: #006e92;
     text-align: center;
@@ -990,7 +979,6 @@ nav ul li:last-child a {
 .work-steps .sub-title, .why-we .sub-title {
     font-size: 26px;
     margin-top: 25px;
-    font-family: "Calibri", sans-serif;
     font-weight: 100;
     color: #005c84;
     text-align: center;
@@ -1002,7 +990,6 @@ nav ul li:last-child a {
     -webkit-border-radius: 10px 10px 0 0;
     -moz-border-radius: 10px 10px 0 0;
     border-radius: 10px 10px 0 0;
-    font-family: "Calibri", sans-serif;
     font-size: 18px;
     color: #ffffff;
     text-align: center;
@@ -1030,7 +1017,6 @@ nav ul li:last-child a {
 }
 .work-steps .steps ul li {
     display: block;
-    font-family: 'Calibri', sans-serif;
     font-size: 14px;
     letter-spacing: 1px;
     color: #ffffff;
@@ -1092,7 +1078,6 @@ nav ul li:last-child a {
     background-size: cover;
 }
 .why-we ul li h4 {
-    font-family: 'Calibri', sans-serif;
     font-size: 15px;
     color: #ffffff;
     letter-spacing: 1px;
@@ -1109,7 +1094,6 @@ nav ul li:last-child a {
 
 /* portfolio */
 .portfolio .sub-title {
-    font-family: 'Calibri', sans-serif;
     font-size: 30px;
     font-weight: 100;
     margin-top: 25px;
@@ -1142,7 +1126,6 @@ nav ul li:last-child a {
 }
 .portfolio .portfolio-link {
     text-decoration: none;
-    font-family: "Calibri", sans-serif;
     font-size: 16px;
     color: #006e92;
     line-height: 1.1;
@@ -1155,7 +1138,6 @@ nav ul li:last-child a {
     text-align: center;
     width: 155px;
     height: 30px;
-    font-family: "Calibri", sans-serif;
     font-size: 18px;
     line-height: 30px;
     color: #ffffff;
@@ -1176,7 +1158,6 @@ nav ul li:last-child a {
 }
 .service-info-page .contact-info>h2 {
     color: #1a5d88;
-    font-family: 'Calibri', sans-serif;
     font-weight: 100;
     font-size: 26px;
 }
@@ -1277,7 +1258,6 @@ nav ul li:last-child a {
 .main-page .portfolio .sub-title, .main-page .contact-info .sub-title {
     font-size: 26px;
     margin-top: 25px;
-    font-family: "Calibri", sans-serif;
     font-weight: 100;
     color: #005c84;
     text-align: center;
@@ -1325,7 +1305,6 @@ nav ul li:last-child a {
     width: 72%;
 }
 .why-we-short ul li h4 {
-    font-family: 'Calibri', sans-serif;
     font-size: 14px;
     letter-spacing: normal;
     line-height: 1.2;
@@ -1344,6 +1323,9 @@ nav ul li:last-child a {
     margin-right: 0;
     width: 100%;
 }
+.work-steps-short .steps > li:first-child {
+    margin-right: 0;
+}
 .work-steps-short .steps ul {
     width: auto;
     padding-right: 20px;
@@ -1360,7 +1342,6 @@ nav ul li:last-child a {
     justify-content: center;
 }
 .articles-page .main-panel h2 {
-    font-family: "Calibri", sans-serif;
     font-size: 22px;
     color: #005c84;
     text-align: center;
@@ -1489,19 +1470,16 @@ nav ul li:last-child a {
     width: 485px;
 }
 .article-list .sub-title {
-    font-family: "Calibri", sans-serif;
     font-size: 16px;
     color: #006e92;
     line-height: 1;
 }
 .article-list .category {
-    font-family: "Calibri", sans-serif;
     font-size: 16px;
     color: #ff7900;
     margin: 5px 0 0;
 }
 .article-list .category a {
-    font-family: "Calibri", sans-serif;
     font-size: 16px;
     color: #ff7900;
 }
@@ -1513,7 +1491,6 @@ nav ul li:last-child a {
     margin-bottom: 10px;
 }
 .article-list .see-all {
-    font-family: "Calibri", sans-serif;
     font-size: 14px;
     color: #006e92;
 }
@@ -1523,7 +1500,6 @@ nav ul li:last-child a {
 /********** PRICE PAGE ************/
 
 .price-page .main-panel>h2 {
-    font-family: "Calibri", sans-serif;
     font-size: 26px;
     color: #005c84;
     text-align: center;
@@ -1584,7 +1560,6 @@ nav ul li:last-child a {
 }
 .price-page .contact-info>h3 {
     color: #1a5d88;
-    font-family: 'Calibri', sans-serif;
     font-weight: 100;
     font-size: 30px;
     margin-bottom: 20px;
@@ -1594,6 +1569,84 @@ nav ul li:last-child a {
 }
 
 /********** END OF PRICE PAGE ************/
+
+/************ PORTFOLIO-INFO PAGE ************/
+
+.pages-links {
+    width: 100%;
+    border-top: 1px dashed #9cbeca;
+    padding-top: 10px;
+    margin: 10px 0;
+}
+.pages-links a {
+    font-size: 14px;
+    color: #005c84;
+}
+.pages-links .left-column:before {
+    content: '<';
+    display: inline-block;
+    font-size: 14px;
+    color: #005c84;
+    margin-right: 5px;
+}
+.pages-links .right-column:after {
+    content: '>';
+    display: inline-block;
+    font-size: 14px;
+    color: #005c84;
+    margin-left: 5px;
+}
+.portfolio-info-page .why-we-short, .portfolio-info-page .why-we-short h3 {
+    margin: 10px auto 0;
+}
+.portfolio-info-page .text-block h1 {
+    font-size: 22px;
+    color: #005c84;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+.portfolio-info-page .text-block .left-column {
+    margin: 0 10px 10px 0;
+}
+.portfolio-info-page .text-block .right-column {
+    margin: 0 0 10px 10px;
+}
+.portfolio-info-page .text-block .sub-title {
+    font-size: 18px;
+    color: #005c84;
+    text-indent: 0;
+    line-height: 1.2;
+    text-align: left;
+}
+.gallery h3 {
+    font-size: 18px;
+    color: #005c84;
+    text-align: center;
+    font-weight: 100;
+    margin: 20px 0;
+}
+.gallery ul {
+    text-align: center;
+}
+.gallery ul li {
+    width: 210px;
+    height: 180px;
+    overflow: hidden;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: 2px solid #e0e9f0;
+    margin: 0 10px 20px;
+}
+.portfolio ul li img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/************ END OF PORTFOLIO-INFO PAGE ************/
 
 /************MODAL WINDOWS ************/
 
@@ -1618,14 +1671,12 @@ nav ul li:last-child a {
     border-radius: 10px;
 }
 .form-callback-short h2 {
-    font-family: "Calibri", sans-serif;
     font-size: 25px;
     color: #ffe100;
     font-weight: 100;
     margin-bottom: 5px;
 }
 .form-callback-short p {
-    font-family: "Calibri", sans-serif;
     font-size: 15px;
     color: #ffffff;
     text-align: center;
@@ -1685,7 +1736,6 @@ nav ul li:last-child a {
     letter-spacing: normal;
     color: #ffffff;
     font-size: 15px;
-    font-family: 'Colibri', sans-serif;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
     -khtml-border-radius: 8px;
@@ -1765,7 +1815,6 @@ nav ul li:last-child a {
     color: #ff0000;
 }
 .form-callback-full h2 {
-    font-family: "Calibri", sans-serif;
     font-size: 25px;
     color: #ffe100;
     font-weight: 100;
@@ -1773,7 +1822,6 @@ nav ul li:last-child a {
     text-align: center;
 }
 .form-callback-full p {
-    font-family: "Calibri", sans-serif;
     font-size: 15px;
     color: #ffffff;
     text-align: center;
@@ -1790,7 +1838,6 @@ nav ul li:last-child a {
     color: #ffffff;
     margin-left: 20px;
     font-size: 12px;
-    font-family: "Calibri", sans-serif;
 }
 .form-callback-full .rel-wrap {
     display: inline-block;
@@ -1878,7 +1925,6 @@ nav ul li:last-child a {
     color: #ffffff;
     font-size: 15px;
     line-height: 30px;
-    font-family: 'Colibri', sans-serif;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
     -khtml-border-radius: 8px;
@@ -1958,6 +2004,12 @@ nav ul li:last-child a {
         margin: 0 auto!important;
         width: 300px;
         padding-left: 80px;
+    }
+    .work-steps-short .steps>li {
+        display: inline-block;
+        margin: 0!important;
+        width: 100%;
+        padding-left: 70px;
     }
     .window-callback-short {
         width: 100%;
@@ -2071,6 +2123,13 @@ nav ul li:last-child a {
     }
     .why-we h3, .work-steps h3 {
         margin-top: 20px;
+    }
+    .why-we-short ul li {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .why-we-short > ul, .why-we-short h3, .work-steps-short .steps, .work-steps-short h3 {
+        width: 100%;
     }
     .page-navigation {
         width: 100%;
