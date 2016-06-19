@@ -1576,7 +1576,7 @@ nav ul li:last-child a {
     width: 100%;
     border-top: 1px dashed #9cbeca;
     padding-top: 10px;
-    margin: 10px 0;
+    margin: 0 0 10px;
 }
 .pages-links a {
     font-size: 14px;
@@ -1596,10 +1596,11 @@ nav ul li:last-child a {
     color: #005c84;
     margin-left: 5px;
 }
-.portfolio-info-page .why-we-short, .portfolio-info-page .why-we-short h3 {
-    margin: 10px auto 0;
+.portfolio-info-page .why-we-short, .portfolio-info-page .why-we-short h3,
+.portfolio-list-page .why-we-short, .portfolio-list-page .why-we-short h3 {
+    margin: 0;
 }
-.portfolio-info-page .text-block h1 {
+.portfolio-info-page h1, .portfolio-list-page h1 {
     font-size: 22px;
     color: #005c84;
     font-weight: 100;
@@ -1650,7 +1651,24 @@ nav ul li:last-child a {
 
 /************ PORTFOLIO-LINK PAGE ************/
 
-
+.portfolio-info-page .breadcrumbs, .portfolio-list-page .breadcrumbs {
+    display: block;
+    margin-bottom: 10px;
+}
+.portfolio-list-page h1 {
+    border-top: 1px dashed #9cbeca;
+    padding: 15px 0;
+}
+.portfolio-list-page h1 + .page-navigation {
+    border-bottom: 1px dashed #9cbeca;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.portfolio-list-page .portfolio + .page-navigation {
+    border-top: 1px dashed #9cbeca;
+    padding-top: 20px;
+    margin-top: 20px;
+}
 
 /************ END OF PORTFOLIO-LINK PAGE ************/
 
