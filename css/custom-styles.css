@@ -2239,6 +2239,10 @@ nav ul li:last-child a {
         width: 223px;
         padding: 20px 10px 10px 10px;
     }
+    .logo-header {
+        width: 180px;
+        height: 62px;
+    }
     .phone-header .phone-number {
         font-size: 20px;
     }
