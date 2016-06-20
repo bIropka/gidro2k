@@ -21,11 +21,11 @@
 }
 a, button, input[type="submit"] {
     cursor: pointer;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+    transition: 0.7s;
 }
 a, a:active {
     outline: none;
@@ -578,7 +578,7 @@ nav ul li a:hover {
     padding: 20px 23px 10px 0;
 }
 .phone-header .phone-number {
-    padding: 0 0 0 25px;
+    padding: 0;
     color: #48a4cd;
     font-size: 21px;
     font-family: Tahoma, Helvetica, Arial, sans-serif;
@@ -601,7 +601,7 @@ nav ul li a:hover {
     font-family: Tahoma, Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     text-align: center;
-    padding-left: 35px;
+    padding: 0;
     line-height: 1.5;
 }
 .header-middle {
@@ -906,21 +906,23 @@ nav ul li a:hover {
 
 }
 .services-cost ul {
-    display: table;
+    display: block;
     width: 95%;
     margin: 10px auto;
-    border-collapse: collapse;
 }
 .services-cost ul li {
-    display: table-row;
+    display: block;
+    width: 100%;
+    list-style: none;
 }
 .services-cost ul li div {
-    display: table-cell;
+    display: block;
     text-align: left;
     font-family: Tahoma, sans-serif;
     font-size: 13px;
     color: #363636;
     padding: 5px 10px;
+    float: left;
 }
 .services-cost ul .title-item .service-name {
     font-size: 14px;
@@ -944,6 +946,9 @@ nav ul li a:hover {
 .services-cost ul li:nth-child(2n + 1) div {
     background: #f9f9f9;
 }
+.services-cost ul .hidden {
+    display: none;
+}
 .services-cost .service-name {
     width: 60%;
 }
@@ -958,9 +963,22 @@ nav ul li a:hover {
     width: 20%;
 }
 .services-cost .see-all {
+    display: inline-block;
     margin-right: 2.5%;
     font-family: Verdana, sans-serif;
     color: #006e92;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.services-cost .see-all:hover {
+    text-decoration: none;
+}
+.services-cost .see-all span {
+    font-family: Verdana, sans-serif;
+    color: #006e92;
+}
+.services-cost .see-all .opened {
+    display: none;
 }
 .services-cost h4, .services-cost h4 span {
     text-align: center;
@@ -992,6 +1010,7 @@ nav ul li a:hover {
     -webkit-box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.25);
     -moz-box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.25);
     box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.25);
+    letter-spacing: 1px;
 }
 .services-cost .leave-order:hover {
     background: #fcc94b;
@@ -1620,6 +1639,9 @@ nav ul li a:hover {
 
 /********** PRICE PAGE ************/
 
+.price-page .why-we-short, .price-page .why-we-short h3 {
+    margin-top: 0;
+}
 .price-page h1 {
     font-size: 26px;
     color: #005c84;
@@ -1679,12 +1701,12 @@ nav ul li a:hover {
 .price-page .services-cost .sub-title:before {
     content: '';
     display: block;
-    width: 99%;
-    height: 80%;
+    width: 98.75%;
+    height: 81%;
     border: 1px dashed #9cbeca;
     position: absolute;
-    left: 0.36%;
-    top: 5%;
+    left: 0.49%;
+    top: 4.1%;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -1740,7 +1762,7 @@ nav ul li a:hover {
     color: #005c84;
     font-weight: 100;
     text-align: center;
-    margin-bottom: 10px;
+    margin: 10px 0 5px;
     line-height: 1.2;
 }
 .portfolio-info-page .text-block .left-column {
@@ -1755,9 +1777,10 @@ nav ul li a:hover {
     text-indent: 0;
     line-height: 1.2;
     text-align: left;
+    margin: 15px 0 5px;
 }
-.gallery h3 {
-    font-size: 18px;
+.gallery h2 {
+    font-size: 22px;
     color: #005c84;
     text-align: center;
     font-weight: 100;
@@ -2073,9 +2096,7 @@ nav ul li a:hover {
 .form-callback-full .validatr-message {
     left: 120px!important;
 }
-.form-callback-full .comment-wrap {
 
-}
 .form-callback-full .form-field {
     display: inline-block;
     width: 210px;
@@ -2121,9 +2142,9 @@ nav ul li a:hover {
     height: 23px;
     width: 27px;
     position: absolute;
-    top: -4px;
+    top: -5px;
     left: auto;
-    right: -50px;
+    right: -45px;
     background: url("../images/sprite-form-black.png") no-repeat left center;
     background-size: cover;
     z-index: 10;
@@ -2134,6 +2155,7 @@ nav ul li a:hover {
 .form-callback-full .email-wrap:before {
     background: url("../images/sprite-form-black.png") no-repeat center;
     background-size: cover;
+    top: -6px;
 }
 .form-callback-full .phone-wrap:before {
     background: url("../images/sprite-form-black.png") no-repeat right center;
@@ -2172,6 +2194,11 @@ nav ul li a:hover {
 }
 /* end of window-callback-short */
 
+/* fixes */
+.main-page .on-map, .contacts-page .on-map {
+    margin-top: -2px;
+    height: 394px;
+}
 /************* MEDIA QUERIES **************/
 @media (max-width: 1023px) {
     .block-content {
@@ -2292,11 +2319,14 @@ nav ul li a:hover {
     .block-content {
         width: 690px;
     }
+    .header-top {
+        padding: 5px 0 0;
+    }
     .logo-header, .phone-header {
         float: none;
         margin: 10px auto;
         width: 223px;
-        padding: 20px 10px 10px 10px;
+        padding: 10px;
     }
     .logo-header {
         width: 180px;
@@ -2408,11 +2438,17 @@ nav ul li a:hover {
         max-width: 330px;
         margin: auto;
     }
+    .portfolio-list-page .why-we-short h3, .portfolio-info-page .why-we-short h3 {
+        margin: 20px auto 0;
+    }
     .page-navigation {
         width: 100%;
     }
     .articles-page .breadcrumbs {
         padding-bottom: 25px;
+    }
+    .header-top .phone-number {
+        padding: 0 0 0 15px;
     }
 }
 
@@ -2451,6 +2487,9 @@ nav ul li a:hover {
     .main-page .why-we ul li {
         margin: 10px 10%;
     }
+    .price-page .work-steps-short h3, .price-page .why-we-short h3 {
+        margin-top: 30px;
+    }
 }
 
 @media (max-width: 640px) {
@@ -2487,6 +2526,9 @@ nav ul li a:hover {
     .footer {
         width: 96%;
         margin: 0 2%;
+    }
+    .portfolio-info-page .side-panel, .portfolio-list-page .side-panel {
+        width: 100%;
     }
 }
 

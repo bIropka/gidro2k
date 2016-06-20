@@ -74,8 +74,12 @@ $(document).ready(function () {
     if ($(window).width() < '701'){
         $('.articles-page .work-steps-short').insertAfter($('.article-list + .page-navigation'));
         $('.articles-page .why-we-short').insertAfter($('.article-list + .page-navigation'));
+        $('.price-page .work-steps-short').insertBefore($('.contact-info'));
+        $('.price-page .why-we-short').insertBefore($('.contact-info'));
 
     } else {
+        $('.price-page .work-steps-short').prependTo('.side-panel');
+        $('.price-page .why-we-short').prependTo('.side-panel');
         $('.articles-page .work-steps-short').insertAfter($('.side-menu'));
         $('.articles-page .why-we-short').insertAfter($('.side-menu'));
     }
@@ -89,8 +93,12 @@ $(document).ready(function () {
         if ($(window).width() < '701'){
             $('.articles-page .work-steps-short').insertAfter($('.article-list + .page-navigation'));
             $('.articles-page .why-we-short').insertAfter($('.article-list + .page-navigation'));
+            $('.price-page .work-steps-short').insertBefore($('.contact-info'));
+            $('.price-page .why-we-short').insertBefore($('.contact-info'));
 
         } else {
+            $('.price-page .work-steps-short').prependTo('.side-panel');
+            $('.price-page .why-we-short').prependTo('.side-panel');
             $('.articles-page .work-steps-short').insertAfter($('.side-menu'));
             $('.articles-page .why-we-short').insertAfter($('.side-menu'));
         }
@@ -105,7 +113,7 @@ $(document).ready(function () {
 
     /*** window-callback-short ***/
 
-    $('.leave-order').click(function () {
+    $('.service-info-page .leave-order').click(function () {
         $(this).parent().append($('.window-callback-short'));
         $('.window-callback-short').fadeIn();
     });
@@ -118,6 +126,10 @@ $(document).ready(function () {
         $('.window-callback-full').fadeIn();
     });
 
+    $('.price-page .leave-order').click(function () {
+        $('.window-callback-full').fadeIn();
+    });
+
     $('.window-callback-full').click(function (event) {
         $target = $(event.target);
         if (!$target.closest($('.form-callback-full')).length) $('.window-callback-full').fadeOut();
@@ -125,5 +137,13 @@ $(document).ready(function () {
     });
 
     /*** the end of the window-callback-full script ***/
+
+    /** script for service-cost **/
+    $('.services-cost .see-all').click(function() {
+        $(this).siblings('ul').find('.hidden').slideToggle();
+        $(this).find('.closed').fadeToggle(0);
+        $(this).find('.opened').fadeToggle(0);
+    });
+    /** end of script for service-cost **/
 
 });
