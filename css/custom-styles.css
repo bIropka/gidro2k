@@ -268,15 +268,17 @@ nav ul li a:hover {
     -moz-border-radius: 5px;
     border-radius: 5px;
 }
-.contacts h2, .form-make-order h2 {
+.contacts h2, .wrapper .form-make-order .form-title {
     font-family: 'pfd-m', sans-serif;
     color: #ffffff;
     text-align: center;
     position: relative;
     margin: 0 0 5px 0;
     font-weight: 100;
+    font-size: 30px;
+    line-height: 1.5;
 }
-.contacts h2::after, .form-make-order h2::after {
+.contacts h2::after, .form-make-order .form-title::after {
     content: '';
     display: block;
     height: 1px;
@@ -466,13 +468,13 @@ nav ul li a:hover {
 .form-make-order.form-top:before {
     display: none;
 }
-.form-make-order.form-top h2 {
+.form-make-order.form-top .form-title {
     font-size: 25px;
     position: relative;
     margin: 0;
     font-weight: 100;
 }
-.form-make-order.form-top h2:after {
+.form-make-order.form-top .form-title:after {
     margin: 0;
     background: #a8c6d0;
     border-bottom: 1px solid #6d8c90;
@@ -588,7 +590,7 @@ nav ul li a:hover {
     content: '';
     display: block;
     position: absolute;
-    left: 0;
+    left: 5px;
     top: -3px;
     width: 15px;
     height: 34px;
@@ -1765,6 +1767,9 @@ nav ul li a:hover {
     margin: 10px 0 5px;
     line-height: 1.2;
 }
+.portfolio-info-page h1 {
+    margin: 20px 0 5px 0;
+}
 .portfolio-info-page .text-block .left-column {
     margin: 0 10px 10px 0;
 }
@@ -1777,7 +1782,7 @@ nav ul li a:hover {
     text-indent: 0;
     line-height: 1.2;
     text-align: left;
-    margin: 15px 0 5px;
+    margin: 25px 0 5px;
 }
 .gallery h2 {
     font-size: 22px;
@@ -1851,7 +1856,7 @@ nav ul li a:hover {
     background: url('../images/background-form-top.png') no-repeat center;
     background-size: cover;
 }
-.portfolio-list-page .form-top h2 {
+.portfolio-list-page .form-top .form-title {
     font-family: "Calibri Bold", sans-serif;
     font-size: 22px;
     font-weight: 600;
@@ -1912,11 +1917,12 @@ nav ul li a:hover {
     -moz-border-radius: 10px;
     border-radius: 10px;
 }
-.form-callback-short h2 {
+.form-callback-short .form-title {
     font-size: 25px;
     color: #ffe100;
     font-weight: 100;
     margin-bottom: 5px;
+    letter-spacing: 0;
 }
 .form-callback-short p {
     font-size: 15px;
