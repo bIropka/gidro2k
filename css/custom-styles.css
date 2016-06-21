@@ -2063,12 +2063,15 @@ nav ul li a:hover {
 .form-callback-full .close-marker:active {
     color: #ff0000;
 }
-.form-callback-full h2 {
+.form-callback-full .form-title {
     font-size: 25px;
     color: #ffe100;
     font-weight: 100;
     margin-bottom: 5px;
     text-align: center;
+    padding: 0;
+    line-height: 1.1;
+    letter-spacing: 0;
 }
 .form-callback-full p {
     font-size: 15px;
